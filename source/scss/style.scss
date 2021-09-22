@@ -1,0 +1,9 @@
+//Base
+@import "base/variables";
+@import "base/fonts";
+@import "base/global";
+@import "base/visually-hidden";
+@import "mixin/reset-list.scss";
+
+//Blocks
+@import "blocks/page.scss";
