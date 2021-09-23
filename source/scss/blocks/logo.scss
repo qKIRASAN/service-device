@@ -1,0 +1,38 @@
+.logo {
+  display: block;
+  outline: none;
+}
+
+.logo__chart {
+  float: left;
+  color: $primary;
+
+  @media (max-width: $medium) {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.logo__description {
+  @media (max-width: $medium) {
+    display: none;
+  }
+}
+
+.logo[href]:hover .logo__chart,
+.logo[href]:focus .logo__chart {
+  color: lighten($primary, 25%);
+}
+
+.logo[href]:active .logo__chart {
+  color: darken($primary, 20%);
+}
+
+.logo[href]:hover .logo__description,
+.logo[href]:focus .logo__description {
+  opacity: 0.9;
+}
+
+.logo[href]:active .logo__description {
+  opacity: 0.7;
+}

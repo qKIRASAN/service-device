@@ -1,0 +1,57 @@
+.header {
+  background-color: $secondary;
+}
+
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 33px;
+  padding-bottom: 23px;
+
+  @media (max-width: $large) {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $medium) {
+    margin-top: 17px;
+    padding-bottom: 15px;
+  }
+}
+
+.header__logo {
+  margin-right: 25px;
+  padding: 0 2px;
+
+  @media (min-width: $medium + 1) and (max-width: $large) {
+    padding: 0;
+  }
+}
+
+.header__contacts {
+  flex: 1 1 36.25%;
+  margin-left: auto;
+  max-width: 950px;
+}
+
+.header__button {
+  margin: 4px 5px auto 25px;
+  padding: 14px 27px 13px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $basic-white;
+  border: 1px solid $basic-white;
+
+  @media (max-width: $large) {
+    display: none;
+  }
+}
+
+.header__button[href]:hover,
+.header__button[href]:focus {
+  opacity: 0.9;
+}
+
+.header__button[href]:active {
+  opacity: 0.7;
+}

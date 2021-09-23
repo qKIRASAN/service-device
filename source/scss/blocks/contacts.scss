@@ -1,0 +1,77 @@
+.contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  line-height: 18px;
+  color: $basic-white;
+
+  @include reset-list;
+}
+
+.contacts__item {
+  flex: 0 1 auto;
+  margin-right: 14px;
+  margin-left: calc(5.7%);
+
+  @media (max-width: $xlarge) {
+    margin-right: 6px;
+    margin-left: 6px;
+  }
+
+  @media (max-width: $large) {
+    margin: 12px -2px auto 36px;
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: $medium) {
+    margin: 5px 0 5px 25px;
+  }
+}
+
+.contacts__link {
+  display: flex;
+  color: inherit;
+  padding: 17px 9px;
+  outline: none;
+
+  @media (max-width: $large) {
+    padding: 0;
+  }
+}
+
+.contacts__icon {
+  margin: auto 0;
+  color: $primary;
+
+  @media (max-width: $large) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.contacts__link[href]:hover .contacts__icon,
+.contacts__link[href]:focus .contacts__icon {
+  color: lighten($primary, 25%);
+}
+
+.contacts__link[href]:active .contacts__icon {
+  color: darken($primary, 20%);
+}
+
+.contacts__description {
+  margin-left: 18px;
+
+  @media (max-width: $large) {
+    display: none;
+  }
+}
+
+.contacts__link[href]:hover .contacts__description,
+.contacts__link[href]:focus .contacts__description {
+  opacity: 0.9;
+}
+
+.contacts__link[href]:active .contacts__description {
+  opacity: 0.7;
+}
