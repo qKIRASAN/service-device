@@ -60,7 +60,47 @@
       </a>
     </div>
   </header>
-  <main></main>
+  <main class="page__main">
+    <h1 class="visually-hidden">Smart Devie - сайт производителя печатных плат</h1>
+    <section class="promo">
+      <div class="promo__inner page__container">
+        <div class="promo__content">
+          <h2>Печатные платы</h2>
+          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+          <a class="button promo__button" href="#request">
+            <span>Получить бесплатную консультацию</span>
+            <span>Бесплатная консультация</span>
+          </a>
+        </div>
+        <div class="promo__image">
+          <picture>
+            <source type="image/webp"
+              media="(max-width: 767px)"
+              srcset="/img/mb-lg.webp 1x,
+                /img/mb-lg@2x.webp 2x"
+            >
+            <source type="image/webp"
+              media="(max-width: 1023px)"
+              srcset="/img/mb-lg.webp 1x,
+                /img/mb-lg@2x.webp 2x"
+            >
+            <source type="image/webp"
+              media="(min-width: 1024px)"
+              srcset="/img/mb-lg.webp 1x,
+                /img/mb-lg@2x.webp 2x"
+            >
+            <!-- 1х: 705px; 2x: 1410px -->
+            <img src="/img/mb-lg.png"
+              srcset="/img/mb-lg@2x.png 2x"
+              width="705"
+              height="515"
+              alt="Четыре новые материнские платы модели ХХХ синего цвета"
+            >
+          </picture>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer class="footer"></footer>
 </body>
 </html>

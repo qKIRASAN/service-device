@@ -1,5 +1,6 @@
 .header {
-  background-color: $secondary;
+  position: relative;
+  z-index: $z-index-content;
 }
 
 .header__inner {
