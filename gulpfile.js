@@ -94,7 +94,7 @@ function createImages() {
     interlaced: true,
   };
   const configPng = {
-    optimizationLevel: 3
+    optimizationLevel: 5
   };
   const configSvg = {
     cleanupIDs: false,
@@ -102,12 +102,12 @@ function createImages() {
   };
 
   return gulp.src(`${src.img}*.{png,jpg,svg}`, {since: gulp.lastRun(createImages)})
+  .pipe(remember('images'))
   .pipe(imagemin([
     imagemin.jpegtran({configJpeg}),
     imagemin.optipng({configPng}),
     imagemin.svgo(configSvg)
   ]))
-  .pipe(remember('images'))
   .pipe(gulp.dest(dist.img));
 }
 
@@ -116,7 +116,8 @@ function createWebp() {
     quality: 90
   };
 
-  return gulp.src(`${src.img}*.{png,jpg}`, {since: gulp.lastRun(createWebp)})
+  return gulp.src(`${src.img}webp/*.{png,jpg}`, {base: `${src.img}webp`, since: gulp.lastRun(createWebp)})
+  .pipe(remember('webp'))
   .pipe(webp({configWebp}))
   .pipe(gulp.dest(dist.img));
 }
@@ -177,9 +178,14 @@ function watch() {
     remember.forget('styles', path.resolve(filepath));
   });
 
-  gulp.watch(`${src.img}*.*`, gulp.series(createImages, createWebp))
+  gulp.watch(`${src.img}*.*`, gulp.series(createImages))
   .on('unlink', function(filepath) {
     remember.forget('images', path.resolve(filepath));
+  });
+
+  gulp.watch(`${src.img}webp/*.*`, gulp.series(createWebp))
+  .on('unlink', function(filepath) {
+    remember.forget('webp', path.resolve(filepath));
   });
 
   gulp.watch(`${src.fonts}*.*`, gulp.series(copy))
