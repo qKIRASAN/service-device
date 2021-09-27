@@ -1,0 +1,128 @@
+.product {
+  position: relative;
+  flex: 0 1 calc((100% - 60px) / 3);
+  margin-bottom: 30px;
+  margin-left: 30px;
+
+  @media (max-width: $large) {
+    flex-basis: 100%;
+    margin-right: auto;
+    margin-bottom: 46px;
+    margin-left: auto;
+  }
+
+  @media (max-width: $medium) {
+    margin-bottom: 30px;
+  }
+}
+
+.product:nth-child(3n + 1) {
+  @media (min-width: $large + 1) {
+    margin-left: 0;
+  }
+}
+
+.product:last-child {
+  @media (min-width: $medium + 1) and (max-width: $large) {
+    margin-bottom: 30px;
+  }
+}
+
+.product__link {
+  display: block;
+  min-height: 620px;
+  color: inherit;
+  outline: none;
+
+  @media (max-width: $large) {
+    min-height: 256px;
+  }
+}
+
+.product__link h3 {
+  margin: auto;
+  padding: 50px 44px 25px;
+  font-weight: 400;
+  font-size: 20px;
+
+  @media (max-width: $large) {
+    padding-top: 40px;
+  }
+
+  @media (max-width: $medium) {
+    padding: 21px 35px;
+  }
+}
+
+.product__image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: $basic-grey;
+  opacity: 0.2;
+  z-index: $z-index-background;
+
+  @media (max-width: $large) {
+    overflow: hidden;
+  }
+}
+
+.product__image img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  height: 620px;
+  object-fit: cover;
+
+  @media (max-width: $large) {
+    height: 256px;
+  }
+}
+
+.product__icon-container {
+  position: absolute;
+  display: flex;
+  right: 0;
+  bottom: 0;
+  width: 63px;
+  height: 63px;
+  background-color: $primary;
+}
+
+.product__icon {
+  color: $basic-white;
+  margin: auto;
+}
+
+.product__link[href]:hover h3,
+.product__link[href]:focus h3 {
+  color: rgba($basic-white, 0.9);
+}
+
+.product__link[href]:active h3,
+.product__link[href]:active .product__icon {
+  color: rgba($basic-white, 0.7);
+}
+
+.product__link[href]:hover .product__image,
+.product__link[href]:focus .product__image {
+  opacity: 0.6;
+}
+
+.product__link[href]:active .product__image {
+  opacity: 0.4;
+}
+
+.product__link[href]:hover .product__icon-container,
+.product__link[href]:focus .product__icon-container {
+  background-color: lighten($primary, 15%);
+}
+
+.product__link[href]:active .product__icon-container {
+  background-color: darken($primary, 10%);
+}

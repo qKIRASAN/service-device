@@ -1,0 +1,50 @@
+.service {
+  padding-top: 60px;
+  padding-bottom: 67px;
+  max-width: 1272px;
+  line-height: 30px;
+  font-family: $roboto-condensed;
+  color: $basic-white;
+
+  @media (max-width: $large) {
+    padding-top: 21px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: $medium) {
+    padding-bottom: 13px;
+    max-width: 575px;
+  }
+}
+
+.service h2 {
+  margin: 28px auto 22px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (max-width: $large) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $medium) {
+    padding: 0 5px 0 10px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.service__inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px 0;
+
+  @media (max-width: $large) {
+    padding: 28px 0;
+  }
+
+  @media (max-width: $medium) {
+    padding: 21px 0;
+  }
+}
