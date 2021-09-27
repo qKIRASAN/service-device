@@ -1,0 +1,128 @@
+.about {
+  position: relative;
+  max-width: 1272px;
+  padding-top: 45px;
+  padding-bottom: 91px;
+  padding-left: 230px;
+
+  @media (max-width: $large) {
+    padding-top: 0;
+    padding-bottom: 64px;
+    padding-left: 213px;
+  }
+
+  @media (max-width: $medium) {
+    padding: 11px 11px 46px 17px;
+    max-width: 575px;
+  }
+
+  &::before {
+    @media (min-width: $medium + 1) {
+      content: "";
+      position: absolute;
+      top: 80px;
+      left: 21px;
+      width: 220px;
+      height: 317px;
+      background-color: transparent;
+      background-image: url("/img/2005_lg.png");
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: contain;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/img/2005_lg@2x.png");
+      }
+    }
+
+    @media (max-width: $large) {
+      top: -1px;
+      left: 0;
+      width: 251px;
+      height: 362px;
+      background-image: url("/img/2005_md.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("/img/2005_md@2x.png");
+      }
+    }
+  }
+}
+
+.about h2 {
+  margin-bottom: 21px;
+  font-weight: 400;
+  font-family: $roboto-condensed;
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (max-width: $large) {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: -3px;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  @media (max-width: $medium) {
+    margin-bottom: 22px;
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about p {
+  margin-bottom: 20px;
+  padding-right: 15px;
+  line-height: 22px;
+
+  @media (max-width: $large) {
+    padding-right: 4px;
+  }
+
+  @media (max-width: $medium) {
+    padding-right: 0;
+  }
+}
+
+.about p:first-of-type {
+  @media (max-width: $medium) {
+    margin-bottom: 38px;
+  }
+}
+
+.about__button {
+  margin: 39px auto 19px 1px;
+  padding: 14px 20px 13px;
+  width: 180px;
+  font-size: 14px;
+  line-height: 16px;
+  color: $primary;
+  background-color: $basic-white;
+  border: 1px solid $primary;
+  cursor: pointer;
+
+  @media (max-width: $large) {
+    margin-top: 42px;
+    margin-left: 0;
+  }
+
+  @media (max-width: $medium) {
+    margin-top: 30px;
+  }
+
+  &--no-js {
+    display: none;
+  }
+}
+
+.about__button:hover,
+.about__button:focus {
+  color: lighten($primary, 15%);
+  border-color: lighten($primary, 15%);
+  transform: scale(1.05);
+}
+
+.about__button:active {
+  opacity: 0.7;
+}

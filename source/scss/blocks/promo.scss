@@ -4,33 +4,45 @@
   padding-bottom: 105px;
   color: $basic-white;
   background-color: $secondary;
-  background-image: url("/img/bg-lg_promo.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image:
+    url("/img/pattern_lg.png"),
+    url("/img/pattern2_lg.png"),
+    url("/img/pattern3_lg.png");
+  background-repeat:
+    no-repeat,
+    no-repeat,
+    no-repeat;
+  background-position:
+    center,
+    center,
+    center;
+  background-size:
+    cover,
+    cover,
+    cover;
   overflow: hidden;
 
-  @media (resolution: 2dppx) {
-    background-image: url("/img/bg-lg_promo@2x.png");
+  @media (min-resolution: 2dppx) {
+    background-image: url("/img/pattern_lg@2x.png");
   }
 
   @media (max-width: $large) {
     padding-top: 137px;
     padding-bottom: 69px;
-    background-image: url("/img/bg-md_promo.png");
+    background-image: url("/img/pattern_md.png");
 
-    @media (resolution: 2dppx) {
-      background-image: url("/img/bg-md_promo@2x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/pattern_md@2x.png");
     }
   }
 
   @media (max-width: $medium) {
     padding-top: 70px;
     padding-bottom: 70px;
-    background-image: url("/img/bg-sm_promo.png");
+    background-image: url("/img/pattern_sm.png");
 
-    @media (resolution: 2dppx) {
-      background-image: url("/img/bg-sm_promo@2x.png");
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/pattern_sm@2x.png");
     }
   }
 }
@@ -259,6 +271,7 @@
 .promo__button[href]:hover,
 .promo__button[href]:focus {
   background-color: lighten($primary, 15%);
+  transform: scale(1.05);
 }
 
 .promo__button[href]:active {

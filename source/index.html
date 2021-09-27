@@ -2,9 +2,9 @@
 <html lang="ru" class="page">
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Smart Device — сайт производителя печатных плат.">
+  <meta name="description" content="Service Device — сайт производителя печатных плат.">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Smart Device | Главная</title>
+  <title>Service Device | Главная</title>
   <link rel="preload" href="/fonts/ptmono.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/fonts/robotocondensed.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="/fonts/robotocondensedbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -60,8 +60,8 @@
       </a>
     </div>
   </header>
-  <main class="page__main">
-    <h1 class="visually-hidden">Smart Devie - сайт производителя печатных плат</h1>
+  <main class="main page__main">
+    <h1 class="visually-hidden">Service Device - сайт производителя печатных плат</h1>
     <section class="promo">
       <div class="promo__inner page__container">
         <div class="promo__content">
@@ -76,22 +76,22 @@
           <picture>
             <source type="image/webp"
               media="(max-width: 767px)"
-              srcset="/img/mb-lg.webp 1x,
-                /img/mb-lg@2x.webp 2x"
+              srcset="/img/board_sm.webp 1x,
+                /img/board_sm@2x.webp 2x"
             >
             <source type="image/webp"
               media="(max-width: 1023px)"
-              srcset="/img/mb-lg.webp 1x,
-                /img/mb-lg@2x.webp 2x"
+              srcset="/img/board_md.webp 1x,
+                /img/board_md@2x.webp 2x"
             >
             <source type="image/webp"
               media="(min-width: 1024px)"
-              srcset="/img/mb-lg.webp 1x,
-                /img/mb-lg@2x.webp 2x"
+              srcset="/img/board_lg.webp 1x,
+                /img/board_lg@2x.webp 2x"
             >
             <!-- 1х: 705px; 2x: 1410px -->
-            <img src="/img/mb-lg.png"
-              srcset="/img/mb-lg@2x.png 2x"
+            <img src="/img/board_lg.png"
+              srcset="/img/board_lg@2x.png 2x"
               width="705"
               height="515"
               alt="Четыре новые материнские платы модели ХХХ синего цвета"
@@ -100,6 +100,83 @@
         </div>
       </div>
     </section>
+    <div class="main__inner">
+      <section class="advantages page__container">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="features">
+          <li class="features__item">
+            <svg class="icon features__icon features__icon--stopwatch"
+              width="29"
+              height="35"
+              focusable="false"
+            >
+              <use xlink:href="/img/sprite.svg#stopwatch"></use>
+            </svg>
+            <p><b>Оперативные сроки</b></p>
+            <p>
+              Усовершенствованная логистическая система позволяет нам<br> просчитывать стоимость, производить и
+              доставлять заказы плат и комплектующих в самые короткие сроки
+            </p>
+          </li>
+          <li class="features__item">
+            <svg class="icon features__icon features__icon--hired"
+              width="35"
+              height="35"
+              focusable="false"
+            >
+              <use xlink:href="/img/sprite.svg#hired"></use>
+            </svg>
+            <p><b>Крупные поставщики</b></p>
+            <p>
+              Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND.
+              Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+            </p>
+          </li>
+          <li class="features__item">
+            <svg class="icon features__icon features__icon--detective"
+              width="36"
+              height="31"
+              focusable="false"
+            >
+              <use xlink:href="/img/sprite.svg#detective"></use>
+            </svg>
+            <p><b>Полная конфиденциальность</b></p>
+            <p>
+              По желанию клиента мы обеспечиваем полную конфеденциальность.
+            </p>
+          </li>
+          <li class="features__item">
+            <svg class="icon features__icon features__icon--tag"
+              width="35"
+              height="35"
+              focusable="false"
+            >
+              <use xlink:href="/img/sprite.svg#tag"></use>
+            </svg>
+            <p><b>Персонализация стоимости</b></p>
+            <p>
+              Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы<br> установить ту цену, которая Вас
+              устраивает.
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="about page__container">
+        <h2>О компании</h2>
+        <p>
+          Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997
+          года. Выполняем срочные заказы и пилотные образцы до 10 дней.
+        </p>
+        <p>
+          Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
+          Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
+          (РЖД),
+          РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+          светотехники России.
+        </p>
+        <button class="button about__button" type="button">Подробнее</button>
+      </section>
+    </div>
   </main>
   <footer class="footer"></footer>
 </body>
