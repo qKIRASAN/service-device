@@ -1,0 +1,90 @@
+.checkbox label {
+  position: relative;
+  display: block;
+  padding: 8px 0 5px 38px;
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba($basic-white, 0.8);
+  cursor: pointer;
+
+  @media (max-width: $large) {
+    padding: 7px 0 7px 39px;
+  }
+
+  @media (max-width: $medium) {
+    padding: 29px 0 7px 34px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+  }
+
+  &::before {
+    top: 9px;
+    left: 6px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgba($basic-white, 0.8);
+
+    @media (max-width: $large) {
+      width: 17px;
+    }
+
+    @media (max-width: $medium) {
+      top: 31px;
+      left: 0;
+    }
+  }
+
+  &::after {
+    display: none;
+    top: 14px;
+    left: 10px;
+    width: 9px;
+    height: 6px;
+    background-image: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.5 2L3.5 5L8 0.5' stroke='white'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (max-width: $medium) {
+      top: 36px;
+      left: 5px;
+    }
+  }
+}
+
+.checkbox p {
+  display: none;
+}
+
+.checkbox input:hover + label,
+.checkbox input:focus + label {
+  color: $basic-white;
+}
+
+.checkbox input:hover + label::before,
+.checkbox input:focus + label::before {
+  border: 1px solid $basic-white;
+}
+
+.checkbox input:active + label {
+  color: rgba($basic-white, 0.4);
+}
+
+.checkbox input:active + label::before {
+  border: 1px solid rgba($basic-white, 0.4);
+}
+
+.checkbox input:checked + label {
+  color: $basic-white;
+}
+
+.checkbox input:checked + label::before {
+  border: 1px solid $basic-white;
+}
+
+.checkbox input:checked + label::after {
+  display: block;
+}

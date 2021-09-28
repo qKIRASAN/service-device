@@ -1,0 +1,143 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 41px;
+  padding-bottom: 42px;
+
+  @media (max-width: $large) {
+    padding-top: 44px;
+  }
+
+  @media (max-width: $medium) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
+
+.form__field {
+  position: relative;
+  margin-bottom: 40px;
+
+  @media (max-width: $large) {
+    margin-bottom: 42px;
+  }
+
+  @media (max-width: $medium) {
+    margin-bottom: 31px;
+  }
+
+  &--name {
+    flex: 0 1 47.5%;
+
+    @media (max-width: $medium) {
+      flex-basis: 100%;
+    }
+  }
+
+  &--phone {
+    flex: 0 1 47%;
+
+    @media (max-width: $medium) {
+      flex-basis: 100%;
+    }
+  }
+
+  &--message {
+    flex: 0 1 100%;
+  }
+}
+
+.form__field textarea {
+  height: 154px;
+  resize: none;
+
+  @media (max-width: $large) {
+    height: 160px;
+  }
+
+  @media (max-width: $medium) {
+    height: 104px;
+  }
+}
+
+.form__field input,
+.form__field textarea {
+  display: block;
+  margin: 0;
+  padding: 12px 16px 16px;
+  width: 100%;
+  font-size: 16px;
+  line-height: 22px;
+  font-family: inherit;
+  color: $basic-white;
+  background-color: rgba($basic-white, 0.1);
+  border: none;
+  outline: 0;
+
+  @media (max-width: $large) {
+    padding-bottom: 17px;
+  }
+
+  &::placeholder {
+    color: $basic-white;
+    opacity: 1;
+  }
+}
+
+.form__field label {
+  display: none;
+  position: absolute;
+  line-height: 22px;
+  top: -23px;
+  left: 3px;
+  transform: scale(0.8);
+}
+
+.form__field p {
+  display: none;
+}
+
+.form__submit {
+  flex: 0 1 100%;
+  padding-top: 3px;
+
+  @media (max-width: $medium) {
+    padding-top: 0;
+  }
+}
+
+.form__field input:hover,
+.form__field textarea:hover {
+  padding: 11px 15px 15px;
+  border: 1px solid rgba($basic-white, 0.8);
+
+  @media (max-width: $medium) {
+    padding-bottom: 16px;
+  }
+}
+
+.form__field input:focus,
+.form__field textarea:focus {
+  padding: 11px 15px 15px;
+  border: 1px solid $basic-white;
+
+  @media (max-width: $medium) {
+    padding-bottom: 16px;
+  }
+}
+
+.form__field input:focus + label,
+.form__field textarea:focus + label {
+  display: block;
+}
+
+.form__field input:active,
+.form__field textarea:active {
+  padding: 11px 15px 15px;
+  border: 1px solid rgba($basic-white, 0.4);
+
+  @media (max-width: $medium) {
+    padding-bottom: 16px;
+  }
+}

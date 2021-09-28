@@ -301,7 +301,79 @@
         </article>
       </div>
     </section>
-    <section id="request" class="request"></section>
+    <section id="request" class="request">
+      <div class="page__container">
+        <div class="request__inner">
+          <h2>Остались вопросы? Задайте их нам!</h2>
+          <p>Мы проконсультируем Вас бесплатно</p>
+          <form class="form" action="https://echo.htmlacademy.ru" method="post" enctype="multipart/form-data">
+            <div class="form__field form__field--name">
+              <input id="name" type="text"
+                name="user-name"
+                placeholder="Имя"
+                autocomplete="off"
+                maxlength="20"
+                pattern="[A-Za-zА-Яа-я]*"
+                required
+              >
+              <label for="name">
+                Имя
+              </label>
+              <p>
+                Пожалуйста заполните это поле
+              </p>
+            </div>
+            <div class="form__field form__field--phone">
+              <input id="phone" type="tel"
+                name="user-phone"
+                placeholder="Телефон"
+                autocomplete="off"
+                maxlength="12"
+                pattern="\+?[0-9]{7,11}"
+                required
+              >
+              <label for="phone">
+                Телефон
+              </label>
+              <p>
+                Пожалуйста заполните это поле
+              </p>
+            </div>
+            <div class="form__field form__field--message">
+              <textarea id="message"
+                name="user-message"
+                placeholder="Ваш вопрос"
+                rows="10"
+                cols="25"
+                autocomplete="off"
+              ></textarea>
+              <label for="message">
+                Ваш вопрос
+              </label>
+            </div>
+            <div class="submit form__submit">
+              <button class="button submit__button" type="submit">
+                Задать вопрос
+              </button>
+              <div class="checkbox submit__checkbox">
+                <input class="visually-hidden" id="personal-data" type="checkbox"
+                  name="user-personal-data"
+                  value="Я согласен на обработку персональных данных"
+                  checked
+                  required
+                >
+                <label for="personal-data">
+                  Я согласен на обработку персональных данных
+                </label>
+                <p>
+                  Пожалуйста дайте согласие на обработку персональных данных
+                </p>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="footer">
     <div class="page__container">
