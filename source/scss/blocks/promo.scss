@@ -276,5 +276,5 @@
 
 .promo__button[href]:active {
   color: rgba($basic-white, 0.7);
-  background-color: darken($primary, 10%);
+  background-color: lighten($primary, 10%);
 }

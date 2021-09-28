@@ -1,0 +1,33 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+
+  @include reset-list;
+}
+
+.social__item {
+  margin-right: 15px;
+  margin-bottom: 10px;
+
+  @media (max-width: $large) {
+    margin: 0 0 3px 15px;
+  }
+
+  @media (max-width: $medium) {
+    margin: 0 8px 3px;
+  }
+}
+
+.social__link {
+  color: $social;
+  outline: none;
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: lighten($primary, 15%);
+}
+
+.social__link:active {
+  color: lighten($primary, 10%);
+}

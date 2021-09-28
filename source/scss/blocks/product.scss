@@ -124,5 +124,5 @@
 }
 
 .product__link[href]:active .product__icon-container {
-  background-color: darken($primary, 10%);
+  background-color: lighten($primary, 10%);
 }

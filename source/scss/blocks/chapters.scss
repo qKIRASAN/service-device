@@ -1,0 +1,36 @@
+.chapters {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.chapters h2 {
+  flex: 0 1 100%;
+}
+
+.chapters__list {
+  flex: 0 1 50%;
+
+  @include reset-list;
+
+  @media (max-width: $large) {
+    flex: 0 1 100%;
+  }
+}
+
+.chapters__list:first-of-type {
+  @media (max-width: $medium) {
+    margin-top: 20px;
+  }
+}
+
+.chapters__list:last-of-type {
+  @media (max-width: $medium) {
+    margin-bottom: 10px;
+  }
+}
+
+.chapters__list:nth-child(2n + 2) {
+  @media (min-width: $large + 1) {
+    padding-left: calc(3.65%);
+  }
+}

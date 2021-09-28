@@ -1,0 +1,13 @@
+.request {
+  color: $basic-white;
+  background-color: $primary;
+  height: 670px;
+
+  @media (max-width: $large) {
+    height: 664px;
+  }
+
+  @media (max-width: $medium) {
+    height: 640px;
+  }
+}

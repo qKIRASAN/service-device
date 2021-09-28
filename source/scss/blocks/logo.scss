@@ -13,7 +13,7 @@
   }
 }
 
-.logo__description {
+.logo__smd {
   @media (max-width: $medium) {
     display: none;
   }
@@ -21,18 +21,21 @@
 
 .logo[href]:hover .logo__chart,
 .logo[href]:focus .logo__chart {
-  color: lighten($primary, 25%);
+  color: lighten($primary, 15%);
 }
 
 .logo[href]:active .logo__chart {
-  color: darken($primary, 20%);
+  color: lighten($primary, 10%);
 }
 
-.logo[href]:hover .logo__description,
-.logo[href]:focus .logo__description {
+.logo[href]:hover .logo__smd,
+.logo[href]:hover .logo__sd,
+.logo[href]:focus .logo__smd,
+.logo[href]:focus .logo__sd {
   opacity: 0.9;
 }
 
-.logo[href]:active .logo__description {
+.logo[href]:active .logo__smd,
+.logo[href]:active .logo__sd {
   opacity: 0.7;
 }

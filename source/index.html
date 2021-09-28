@@ -21,7 +21,7 @@
         >
           <use xlink:href="/img/sprite.svg#logo"></use>
         </svg>
-        <svg class="icon logo__description"
+        <svg class="icon logo__smd"
           width="150"
           height="52"
           focusable="false"
@@ -170,8 +170,7 @@
         <p>
           Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND.
           Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог
-          (РЖД),
-          РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
+          (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители
           светотехники России.
         </p>
         <button class="button about__button" type="button">Подробнее</button>
@@ -188,17 +187,17 @@
                 <source type="image/webp"
                   media="(max-width: 767px)"
                   srcset="/img/development_sm.webp 1x,
-                /img/development_sm@2x.webp 2x"
+                    /img/development_sm@2x.webp 2x"
                 >
                 <source type="image/webp"
                   media="(max-width: 1023px)"
                   srcset="/img/development_md.webp 1x,
-                /img/development_md@2x.webp 2x"
+                    /img/development_md@2x.webp 2x"
                 >
                 <source type="image/webp"
                   media="(min-width: 1024px)"
                   srcset="/img/development_lg.webp 1x,
-                /img/development_lg@2x.webp 2x"
+                    /img/development_lg@2x.webp 2x"
                 >
                 <!-- 1x: 370px, 2x: 740px-->
                 <img src="/img/development_lg.jpg"
@@ -228,17 +227,17 @@
                 <source type="image/webp"
                   media="(max-width: 767px)"
                   srcset="/img/installation_sm.webp 1x,
-                /img/installation_sm@2x.webp 2x"
+                    /img/installation_sm@2x.webp 2x"
                 >
                 <source type="image/webp"
                   media="(max-width: 1023px)"
                   srcset="/img/installation_md.webp 1x,
-                /img/installation_md@2x.webp 2x"
+                    /img/installation_md@2x.webp 2x"
                 >
                 <source type="image/webp"
                   media="(min-width: 1024px)"
                   srcset="/img/installation_lg.webp 1x,
-                /img/installation_lg@2x.webp 2x"
+                    /img/installation_lg@2x.webp 2x"
                 >
                 <!-- 1x: 370px, 2x: 740px-->
                 <img src="/img/installation_lg.jpg"
@@ -268,17 +267,17 @@
                 <source type="image/webp"
                   media="(max-width: 767px)"
                   srcset="/img/components_sm.webp 1x,
-                /img/components_sm@2x.webp 2x"
+                    /img/components_sm@2x.webp 2x"
                 >
                 <source type="image/webp"
                   media="(max-width: 1023px)"
                   srcset="/img/components_md.webp 1x,
-                /img/components_md@2x.webp 2x"
+                    /img/components_md@2x.webp 2x"
                 >
                 <source type="image/webp"
                   media="(min-width: 1024px)"
                   srcset="/img/components_lg.webp 1x,
-                /img/components_lg@2x.webp 2x"
+                    /img/components_lg@2x.webp 2x"
                 >
                 <!-- 1x: 370px, 2x: 740px-->
                 <img src="/img/components_lg.jpg"
@@ -304,6 +303,156 @@
     </section>
     <section id="request" class="request"></section>
   </main>
-  <footer class="footer"></footer>
+  <footer class="footer">
+    <div class="page__container">
+      <div class="footer__top">
+        <div class="links footer__links">
+          <a class="logo footer__logo" aria-hidden="true">
+            <svg class="icon links__icon logo__chart"
+              width="52"
+              height="52"
+              focusable="false"
+            >
+              <use xlink:href="/img/sprite.svg#logo"></use>
+            </svg>
+            <svg class="icon logo__sd"
+              width="165"
+              height="52"
+              focusable="false"
+            >
+              <use xlink:href="/img/sprite.svg#logo-sd"></use>
+            </svg>
+          </a>
+          <div class="links__rights">
+            <p>1999-2018 SD Service Devices</p>
+          </div>
+          <ul class="social links__social">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="перейти на страницу в фейсбуке">
+                <svg class="icon"
+                  width="27"
+                  height="27"
+                  focusable="false"
+                >
+                  <use xlink:href="/img/sprite.svg#fb"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="перейти на страницу в однокассниках">
+                <svg class="icon"
+                  width="27"
+                  height="26"
+                  focusable="false"
+                >
+                  <use xlink:href="/img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="перейти на страницу в контакте">
+                <svg class="icon"
+                  width="27"
+                  height="26"
+                  focusable="false"
+                >
+                  <use xlink:href="/img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <nav class="chapters footer__inner">
+          <h2>Разделы сайта</h2>
+          <button class="burger" type="button" aria-label="показать разделы сайта">
+            <svg class="icon burger__icon-plus"
+              width="16"
+              height="16"
+              focusable="false"
+            >
+              <use xlink:href="/img/sprite.svg#plus"></use>
+            </svg>
+            <svg class="icon burger__icon-minus"
+              width="16"
+              height="2"
+              focusable="false"
+            >
+              <use xlink:href="/img/sprite.svg#minus"></use>
+            </svg>
+          </button>
+          <ul class="chapters__list">
+            <li class="chapters__item">
+              <a href="#">О компании</a>
+            </li>
+            <li class="chapters__item">
+              <a href="#">Продукты</a>
+            </li>
+            <li class="chapters__item">
+              <a href="#">Производство печатных плат</a>
+            </li>
+            <li class="chapters__item">
+              <a href="#">Монтаж печатных плат</a>
+            </li>
+          </ul>
+          <ul class="chapters__list">
+            <li class="chapters__item">
+              <a href="#">Комплектующие</a>
+            </li>
+            <li class="chapters__item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="chapters__item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="address footer__inner">
+          <h2>Наш офис</h2>
+          <button class="burger" type="button" aria-label="показать контакты">
+            <svg class="icon burger__icon-plus"
+              width="16"
+              height="16"
+              focusable="false"
+            >
+              <use xlink:href="/img/sprite.svg#plus"></use>
+            </svg>
+            <svg class="icon burger__icon-minus"
+              width="16"
+              height="2"
+              focusable="false"
+            >
+              <use xlink:href="/img/sprite.svg#minus"></use>
+            </svg>
+          </button>
+          <ul class="address__list">
+            <li>
+              <p>г. Мытищи, Олимпийский проспект, д.10</p>
+            </li>
+            <li>
+              <a href="tel:+74955894050">+7 (495) 589-40-50</a>
+            </li>
+            <li>
+              <a href="tel:+79250038767">+7 (925) 003-87-67</a>
+            </li>
+            <li>
+              <a href="tel:+792692608079">+7 (926) 926-080-79</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__rights">
+          <p>Все права защищены</p>
+          <p>1999-2018 SD Service Devices</p>
+        </div>
+        <div class="footer__confidential">
+          <p>
+            <a href="#">Условия конфиденциальности</a>
+          </p>
+          <p>Developed by <a href="#">wow studio</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,0 +1,14 @@
+.address__list {
+  @include reset-list;
+
+  @media (max-width: $medium) {
+    margin: 20px 0 10px;
+    padding-right: 15px;
+  }
+}
+
+.address__list p {
+  margin: 0;
+  line-height: 25px;
+  letter-spacing: -0.04em;
+}
