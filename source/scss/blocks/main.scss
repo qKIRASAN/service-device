@@ -1,43 +1,15 @@
 .main__inner {
-  position: relative;
-  //width: 1920px;
-  //height: 1347px;
-  overflow: hidden;
   background-color: $basic-white;
-  //background-image: url("data:image/svg+xml,%3Csvg width='1920' height='1347' viewBox='0 0 1920 1347' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M297.208 633.738L297.208 1183.09L-178.543 908.413L297.208 633.738Z' stroke='%23EBEBEB'/%3E%3Ccircle cx='296.896' cy='1182.88' r='5' transform='rotate(-30 296.896 1182.88)' fill='%23F2F2F2'/%3E%3Ccircle cx='297.053' cy='633.154' r='5' transform='rotate(-30 297.053 633.154)' fill='%23F2F2F2'/%3E%3Cpath d='M425.594 75.3811L425.594 331.777L203.549 203.579L425.594 75.3811Z' stroke='%23EBEBEB'/%3E%3Cpath d='M1668.56 747.777L1668.56 491.381L1890.61 619.579L1668.56 747.777Z' stroke='%23EBEBEB'/%3E%3Cpath d='M1312.62 610.625L836.874 885.299L836.874 335.95L1312.62 610.625Z' stroke='%23EBEBEB'/%3E%3Ccircle cx='836.739' cy='335.198' r='5' transform='rotate(30 836.739 335.198)' fill='%23F2F2F2'/%3E%3Ccircle cx='836.896' cy='884.926' r='5' transform='rotate(30 836.896 884.926)' fill='%23F2F2F2'/%3E%3Ccircle cx='1313.05' cy='610.198' r='5' transform='rotate(30 1313.05 610.198)' fill='%23F2F2F2'/%3E%3C/svg%3E");
-  //background-repeat: no-repeat;
-  //background-position: center;
-  //background-size: cover;
+  background-image: url("data:image/svg+xml,%3Csvg width='1920' height='1347' viewBox='0 0 1920 1347' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M297.208 633.738L297.208 1183.09L-178.543 908.413L297.208 633.738Z' stroke='%23EBEBEB'/%3E%3Ccircle cx='296.896' cy='1182.88' r='5' transform='rotate(-30 296.896 1182.88)' fill='%23F2F2F2'/%3E%3Ccircle cx='297.053' cy='633.154' r='5' transform='rotate(-30 297.053 633.154)' fill='%23F2F2F2'/%3E%3Cpath d='M425.594 75.3811L425.594 331.777L203.549 203.579L425.594 75.3811Z' stroke='%23EBEBEB'/%3E%3Cpath d='M1668.56 747.777L1668.56 491.381L1890.61 619.579L1668.56 747.777Z' stroke='%23EBEBEB'/%3E%3Cpath d='M1312.62 610.625L836.874 885.299L836.874 335.95L1312.62 610.625Z' stroke='%23EBEBEB'/%3E%3Ccircle cx='836.739' cy='335.198' r='5' transform='rotate(30 836.739 335.198)' fill='%23F2F2F2'/%3E%3Ccircle cx='836.896' cy='884.926' r='5' transform='rotate(30 836.896 884.926)' fill='%23F2F2F2'/%3E%3Ccircle cx='1313.05' cy='610.198' r='5' transform='rotate(30 1313.05 610.198)' fill='%23F2F2F2'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: 0 -29px;
 
-  /*
   @media (max-width: $large) {
-    background-position: 26.8% 24px;
+    background-image: url("data:image/svg+xml,%3Csvg width='872' height='873' viewBox='0 0 872 873' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M753.624 434.625L277.874 709.299L277.874 159.95L753.624 434.625Z' stroke='%23EBEBEB'/%3E%3Ccircle cx='277.739' cy='159.198' r='5' transform='rotate(30 277.739 159.198)' fill='%23F2F2F2'/%3E%3Ccircle cx='277.896' cy='708.926' r='5' transform='rotate(30 277.896 708.926)' fill='%23F2F2F2'/%3E%3Ccircle cx='754.053' cy='434.198' r='5' transform='rotate(30 754.053 434.198)' fill='%23F2F2F2'/%3E%3C/svg%3E");
+    background-position: 211px 90px;
   }
 
   @media (max-width: $medium) {
-  }
-  */
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -29px;
-    left: 0;
-    width: 100%;
-    height: 1347px;
-    background-image: url("data:image/svg+xml,%3Csvg width='1920' height='1347' viewBox='0 0 1920 1347' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M297.208 633.738L297.208 1183.09L-178.543 908.413L297.208 633.738Z' stroke='%23EBEBEB'/%3E%3Ccircle cx='296.896' cy='1182.88' r='5' transform='rotate(-30 296.896 1182.88)' fill='%23F2F2F2'/%3E%3Ccircle cx='297.053' cy='633.154' r='5' transform='rotate(-30 297.053 633.154)' fill='%23F2F2F2'/%3E%3Cpath d='M425.594 75.3811L425.594 331.777L203.549 203.579L425.594 75.3811Z' stroke='%23EBEBEB'/%3E%3Cpath d='M1668.56 747.777L1668.56 491.381L1890.61 619.579L1668.56 747.777Z' stroke='%23EBEBEB'/%3E%3Cpath d='M1312.62 610.625L836.874 885.299L836.874 335.95L1312.62 610.625Z' stroke='%23EBEBEB'/%3E%3Ccircle cx='836.739' cy='335.198' r='5' transform='rotate(30 836.739 335.198)' fill='%23F2F2F2'/%3E%3Ccircle cx='836.896' cy='884.926' r='5' transform='rotate(30 836.896 884.926)' fill='%23F2F2F2'/%3E%3Ccircle cx='1313.05' cy='610.198' r='5' transform='rotate(30 1313.05 610.198)' fill='%23F2F2F2'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-
-    @media (max-width: $large) {
-      top: -86px;
-      left: 227px;
-    }
-
-    @media (max-width: $medium) {
-      top: 476px;
-      left: 121px;
-    }
+    background-position: -120px 652px;
   }
 }

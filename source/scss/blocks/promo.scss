@@ -13,9 +13,9 @@
     no-repeat,
     no-repeat;
   background-position:
-    center,
-    center,
-    center;
+    0 0,
+    0 0,
+    0 0;
   background-size:
     cover,
     cover,
@@ -23,26 +23,41 @@
   overflow: hidden;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/pattern_lg@2x.png");
+    background-image:
+      url("/img/pattern_lg@2x.png"),
+      url("/img/pattern2_lg@2x.png"),
+      url("/img/pattern3_lg@2x.png");
   }
 
   @media (max-width: $large) {
     padding-top: 137px;
     padding-bottom: 69px;
-    background-image: url("/img/pattern_md.png");
+    background-image:
+      url("/img/pattern_md.png"),
+      url("/img/pattern2_md.png"),
+      url("/img/pattern3_md.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/pattern_md@2x.png");
+      background-image:
+        url("/img/pattern_md@2x.png"),
+        url("/img/pattern2_md@2x.png"),
+        url("/img/pattern3_md@2x.png");
     }
   }
 
   @media (max-width: $medium) {
     padding-top: 70px;
     padding-bottom: 70px;
-    background-image: url("/img/pattern_sm.png");
+    background-image:
+      url("/img/pattern_sm.png"),
+      url("/img/pattern2_sm.png"),
+      url("/img/pattern3_sm.png");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/pattern_sm@2x.png");
+      background-image:
+        url("/img/pattern_sm@2x.png"),
+        url("/img/pattern2_sm@2x.png"),
+        url("/img/pattern3_sm@2x.png");
     }
   }
 }
@@ -142,6 +157,7 @@
 
 .promo__image {
   position: relative;
+  width: 100%;
   min-height: 524px;
   z-index: $z-index-base;
 
@@ -180,7 +196,7 @@
 
     @media (max-width: $medium) {
       top: -116px;
-      left: 162px;
+      left: 56%;
       width: 480px;
       height: 482px;
     }
@@ -202,7 +218,7 @@
 
     @media (max-width: $medium) {
       top: 83px;
-      left: 137px;
+      left: 47.3%;
       width: 281px;
       height: 284px;
     }
@@ -226,7 +242,8 @@
 
   @media (max-width: $medium) {
     top: 22px;
-    left: 11px;
+    right: -7.5%;
+    left: unset;
     width: 301px;
     height: 220px;
   }

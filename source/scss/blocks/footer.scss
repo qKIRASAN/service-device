@@ -35,7 +35,7 @@
       left: 50%;
       width: 100vw;
       height: 1px;
-      background-color: rgba(98, 105, 98, 0.2);
+      background-color: rgba($line, 0.2);
       margin-left: -50vw;
     }
   }
@@ -95,7 +95,7 @@
       left: 50%;
       width: 100vw;
       height: 1px;
-      background-color: rgba(98, 105, 98, 0.2);
+      background-color: rgba($line, 0.2);
       margin-left: -50vw;
     }
   }

@@ -17,7 +17,7 @@
       left: 50%;
       width: 100vw;
       height: 1px;
-      background-color: rgba(98, 105, 98, 0.2);
+      background-color: rgba($line, 0.2);
       margin-left: -50vw;
     }
   }
@@ -63,7 +63,7 @@
 
   @media (max-width: $medium) {
     flex: 0 1 auto;
-    margin: 0 auto auto auto;
+    margin: 0 auto auto;
     max-width: unset;
   }
 }
