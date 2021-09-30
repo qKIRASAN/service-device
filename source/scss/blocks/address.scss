@@ -5,6 +5,10 @@
     margin: 20px 0 10px;
     padding-right: 15px;
   }
+
+  &--disabled {
+    display: none;
+  }
 }
 
 .address__list p {

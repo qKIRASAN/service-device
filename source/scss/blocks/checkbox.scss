@@ -55,8 +55,8 @@
   }
 }
 
-.checkbox p {
-  display: none;
+.checkbox--invalid label::before {
+  border: 1px solid $secondary;
 }
 
 .checkbox input:hover + label,

@@ -85,6 +85,15 @@
   }
 }
 
+.form__field--invalid input {
+  padding: 11px 15px 15px;
+  border: 1px solid $secondary;
+
+  @media (max-width: $medium) {
+    padding-bottom: 16px;
+  }
+}
+
 .form__field label {
   display: none;
   position: absolute;
@@ -92,10 +101,6 @@
   top: -23px;
   left: 3px;
   transform: scale(0.8);
-}
-
-.form__field p {
-  display: none;
 }
 
 .form__submit {

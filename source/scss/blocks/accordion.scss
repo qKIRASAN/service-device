@@ -1,0 +1,11 @@
+.accordion .accordion__item {
+  @media (max-width: $medium) {
+    display: none;
+  }
+}
+
+.accordion--visible .accordion__item {
+  @media (max-width: $medium) {
+    display: block;
+  }
+}

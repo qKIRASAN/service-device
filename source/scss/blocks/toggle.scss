@@ -1,0 +1,45 @@
+.toggle {
+  display: none;
+  margin: 0;
+  padding: 0;
+  color: rgba($secondary, 0.5);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &--button-plus,
+  &--button-minus {
+    @media (max-width: $medium) {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 73px;
+    }
+  }
+}
+
+.toggle__icon-plus,
+.toggle__icon-minus {
+  display: none;
+}
+
+.toggle--button-plus .toggle__icon-plus {
+  display: block;
+  margin: auto 3px auto auto;
+}
+
+.toggle--button-minus .toggle__icon-minus {
+  display: block;
+  margin: auto 3px auto auto;
+}
+
+.toggle:hover,
+.toggle:focus {
+  color: lighten($secondary, 15%);
+}
+
+.toggle:active {
+  color: lighten($secondary, 10%);
+}

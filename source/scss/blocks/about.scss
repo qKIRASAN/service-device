@@ -92,6 +92,7 @@
 }
 
 .about__button {
+  display: block;
   margin: 39px auto 19px 1px;
   padding: 14px 20px 13px;
   width: 180px;
@@ -100,7 +101,6 @@
   color: $primary;
   background-color: $basic-white;
   border: 1px solid $primary;
-  cursor: pointer;
 
   @media (max-width: $large) {
     margin-top: 42px;

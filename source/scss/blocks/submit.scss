@@ -5,6 +5,7 @@
 }
 
 .submit__button {
+  display: block;
   flex: 0 1 47.4%;
   margin: 0;
   padding: 14px 10px 13px;
@@ -13,7 +14,6 @@
   color: $basic-white;
   background-color: transparent;
   border: 1px solid $basic-white;
-  cursor: pointer;
 
   @media (max-width: $large) {
     padding-top: 12px;

@@ -32,10 +32,9 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/scss/**/*.scss\" --fix --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint && eslint source/js/**/*.js",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/main.js source/js/modules/*.mjs",
     "build": "gulp build",
     "start": "gulp",
-    "sprite": "gulp sprite"
   },
   "browserslist": [
     "last 2 versions",
