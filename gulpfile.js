@@ -61,8 +61,8 @@ function clean() {
 function createHtml() {
   return gulp.src(`${src.root}*.html`, {since: gulp.lastRun(createHtml)})
   .pipe(gulpIf(!isDevelopment, replace(
-    /href="\/css\/style.css"/,
-    'href="/css/style.min.css"'
+    /href=".\/css\/style.css"/,
+    'href="./css/style.min.css"'
   )))
   .pipe(remember('html'))
   .pipe(gulp.dest(dist.root));
