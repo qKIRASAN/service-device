@@ -62,6 +62,11 @@
 .checkbox input:hover + label,
 .checkbox input:focus + label {
   color: $basic-white;
+  transform: scale(1.02);
+}
+
+.checkbox input:active + label {
+  color: rgba($basic-white, 0.7);
 }
 
 .checkbox input:hover + label::before,
@@ -69,20 +74,29 @@
   border: 1px solid $basic-white;
 }
 
-.checkbox input:active + label {
-  color: rgba($basic-white, 0.4);
-}
-
 .checkbox input:active + label::before {
-  border: 1px solid rgba($basic-white, 0.4);
+  border: 1px solid rgba($basic-white, 0.7);
 }
 
 .checkbox input:checked + label {
   color: $basic-white;
 }
 
+.checkbox input:hover:checked + label,
+.checkbox input:focus:checked + label {
+  transform: scale(1.02);
+}
+
+.checkbox input:active:checked + label {
+  color: rgba($basic-white, 0.7);
+}
+
 .checkbox input:checked + label::before {
   border: 1px solid $basic-white;
+}
+
+.checkbox input:active:checked + label::before {
+  border: 1px solid rgba($basic-white, 0.7);
 }
 
 .checkbox input:checked + label::after {

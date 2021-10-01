@@ -4,3 +4,4 @@ import './modules/phone-mask.mjs';
 import './modules/trim.mjs';
 import './modules/accordion.mjs';
 import './modules/form.mjs';
+import './modules/popup.mjs';

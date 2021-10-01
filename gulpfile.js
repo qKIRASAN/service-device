@@ -26,6 +26,7 @@ const src= {
   root: 'source/',
   fonts: 'source/fonts/',
   img: 'source/img/',
+  favicon: 'source/img/favicon/',
   styles: 'source/scss/',
   js: 'source/js/',
 };
@@ -34,6 +35,7 @@ const dist= {
   root: 'build/',
   fonts: 'build/fonts/',
   img: 'build/img/',
+  favicon: 'build/img/favicon/',
   styles: 'build/css/',
   js: 'build/js/'
 };
@@ -162,9 +164,13 @@ function createScript() {
 }
 
 function copy() {
-  return gulp.src(`${src.fonts}*.*`, {since: gulp.lastRun(copy)})
-  .pipe(remember('fonts'))
-  .pipe(gulp.dest(dist.fonts))
+  return gulp.src([`${src.fonts}*.*`, `${src.favicon}*.*`], {since: gulp.lastRun(copy)})
+  .pipe(remember('copy'))
+  .pipe(gulp.dest(function(file) {
+    return file.extname === `.woff` || file.extname === `.woff2` ?
+      dist.fonts :
+      dist.favicon;
+  }))
 }
 
 function watch() {
@@ -188,9 +194,9 @@ function watch() {
     remember.forget('webp', path.resolve(filepath));
   });
 
-  gulp.watch(`${src.fonts}*.*`, gulp.series(copy))
+  gulp.watch([`${src.fonts}*.*`, `${src.favicon}*.*`], gulp.series(copy))
   .on('unlink', function(filepath) {
-    remember.forget('fonts', path.resolve(filepath));
+    remember.forget('copy', path.resolve(filepath));
   });
 
   gulp.watch(`${src.img}sprite/*.svg`, gulp.series(createSprite));
@@ -203,7 +209,6 @@ const build = gulp.series(
   gulp.parallel(createImages, createWebp),
 );
 
-exports.sprite = createSprite;
 exports.build = build;
 exports.default = gulp.series(
   build,

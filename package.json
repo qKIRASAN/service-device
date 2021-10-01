@@ -1,8 +1,8 @@
 {
-  "name": "smart-device",
+  "name": "service-device",
   "private": true,
   "author": "K. Gadomskii",
-  "description": "Smart device demo project",
+  "description": "Service device demo project",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
@@ -23,7 +23,6 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-webp": "^4.0.1",
-    "pixel-glass": "^1.0.13",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.x",
     "stylelint-scss": "3.21.0",
@@ -34,7 +33,7 @@
     "stylelint": "stylelint \"source/scss/**/*.scss\" --fix --syntax scss",
     "test": "npm run editorconfig && npm run stylelint && eslint source/js/main.js source/js/modules/*.mjs",
     "build": "gulp build",
-    "start": "gulp",
+    "start": "gulp"
   },
   "browserslist": [
     "last 2 versions",

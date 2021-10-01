@@ -1,0 +1,114 @@
+.popup {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba($basic-black, 0.5);
+  z-index: $z-index-popup;
+
+  &--visible {
+    display: block;
+  }
+}
+
+.popup__inner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  padding: 19px 39px;
+  width: 490px;
+  height: 605px;
+  color: $basic-white;
+  background-color: $primary;
+}
+
+.popup__button {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 21px;
+  height: 21px;
+  padding: 0;
+  color: $basic-white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.popup__button svg {
+  margin: auto;
+}
+
+.popup__inner h2 {
+  margin: 10px auto 13px;
+  font-weight: 400;
+  font-family: $roboto-condensed;
+  font-size: 28px;
+  line-height: 39px;
+}
+
+.popup__inner p {
+  margin: 10px auto;
+  padding-right: 15px;
+  line-height: 22px;
+}
+
+.popup__inner .form {
+  padding-top: 22px;
+}
+
+.popup__inner .form__field {
+  flex: 0 1 100%;
+  margin-bottom: 30px;
+}
+
+.popup__inner textarea {
+  height: 104px;
+}
+
+.popup__inner input,
+.popup__inner textarea {
+  padding: 11px 23px 17px;
+}
+
+.popup__inner .form__submit {
+  padding-top: 0;
+}
+
+.popup__inner .submit__button,
+.popup__inner .submit__checkbox {
+  flex: 0 1 100%;
+}
+
+.popup__inner .submit__button {
+  margin-bottom: 25px;
+  padding: 15px 10px 14px;
+}
+
+.popup__checkbox label {
+  padding: 8px 18px 5px 48px;
+
+  &::before {
+    top: 10px;
+    left: 0;
+  }
+
+  &::after {
+    top: 15px;
+    left: 4px;
+  }
+}
+
+.popup__button:hover svg,
+.popup__button:focus svg {
+  width: 20px;
+  height: 20px;
+}
+
+.popup__button:active {
+  color: rgba($basic-white, 0.7);
+}
