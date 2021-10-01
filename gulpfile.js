@@ -149,7 +149,7 @@ function createScript() {
       main: path.resolve(`${src.js}main.js`),
       vendor: path.resolve(`${src.js}vendor.js`)
     },
-    mode: isDevelopment ? 'development' : 'production',
+    mode: 'development',
     devtool: isDevelopment ? 'source-map' : 'none',
     output: {
       filename: '[name].js',
