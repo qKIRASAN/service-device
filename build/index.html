@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="./css/style.min.css">
 </head>
 <body class="page__body">
+<div class="header-container">
   <header class="header">
     <div class="header__inner page__container">
       <a class="logo header__logo" aria-hidden="true">
@@ -64,46 +65,47 @@
       </a>
     </div>
   </header>
-  <main class="main page__main">
-    <h1 class="visually-hidden">Service Device - сайт производителя печатных плат</h1>
-    <section class="promo">
-      <div class="promo__inner page__container">
-        <div class="promo__content">
-          <h2>Печатные платы</h2>
-          <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="button promo__button" href="#request">
-            <span>Получить бесплатную консультацию</span>
-            <span>Бесплатная консультация</span>
-          </a>
-        </div>
-        <div class="promo__image">
-          <picture>
-            <source type="image/webp"
-              media="(max-width: 767px)"
-              srcset="./img/board_sm.webp 1x,
-                ./img/board_sm@2x.webp 2x"
-            >
-            <source type="image/webp"
-              media="(max-width: 1023px)"
-              srcset="./img/board_md.webp 1x,
-                ./img/board_md@2x.webp 2x"
-            >
-            <source type="image/webp"
-              media="(min-width: 1024px)"
-              srcset="./img/board_lg.webp 1x,
-                ./img/board_lg@2x.webp 2x"
-            >
-            <!-- 1х: 705px; 2x: 1410px -->
-            <img src="./img/board_lg.png"
-              srcset="./img/board_lg@2x.png 2x"
-              width="705"
-              height="515"
-              alt="Четыре новые материнские платы модели ХХХ синего цвета"
-            >
-          </picture>
-        </div>
+  <h1 class="visually-hidden">Service Device - сайт производителя печатных плат</h1>
+  <section class="promo">
+    <div class="promo__inner page__container">
+      <div class="promo__content">
+        <h2>Печатные платы</h2>
+        <p>производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a class="button promo__button" href="#request">
+          <span>Получить бесплатную консультацию</span>
+          <span>Бесплатная консультация</span>
+        </a>
       </div>
-    </section>
+      <div class="promo__image">
+        <picture>
+          <source type="image/webp"
+            media="(max-width: 767px)"
+            srcset="./img/board_sm.webp 1x,
+                ./img/board_sm@2x.webp 2x"
+          >
+          <source type="image/webp"
+            media="(max-width: 1023px)"
+            srcset="./img/board_md.webp 1x,
+                ./img/board_md@2x.webp 2x"
+          >
+          <source type="image/webp"
+            media="(min-width: 1024px)"
+            srcset="./img/board_lg.webp 1x,
+                ./img/board_lg@2x.webp 2x"
+          >
+          <!-- 1х: 705px; 2x: 1410px -->
+          <img src="./img/board_lg.png"
+            srcset="./img/board_lg@2x.png 2x"
+            width="705"
+            height="515"
+            alt="Четыре новые материнские платы модели ХХХ синего цвета"
+          >
+        </picture>
+      </div>
+    </div>
+  </section>
+</div>
+  <main class="main">
     <div class="main__inner">
       <section class="advantages page__container">
         <h2 class="visually-hidden">Наши преимущества</h2>
@@ -316,8 +318,7 @@
                 name="user-name"
                 placeholder="Имя"
                 autocomplete="off"
-                maxlength="20"
-                pattern="[A-Za-zА-Яа-я]*"
+                pattern="[A-Za-zА-Яа-я\s]*"
                 required
               >
               <label for="name">
@@ -371,7 +372,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="page__container">
+    <div class="page__container page__container--footer">
       <div class="footer__top">
         <div class="links footer__links">
           <a class="logo footer__logo" aria-hidden="true">
@@ -540,8 +541,7 @@
             name="user-name"
             placeholder="Имя"
             autocomplete="off"
-            maxlength="20"
-            pattern="[A-Za-zА-Яа-я]*"
+            pattern="[A-Za-zА-Яа-я\s]*"
             required
           >
           <label for="popup-name">
