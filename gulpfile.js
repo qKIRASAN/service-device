@@ -147,12 +147,14 @@ function createScript() {
   const config = {
     entry: {
       main: path.resolve(`${src.js}main.js`),
-      vendor: path.resolve(`${src.js}vendor.js`)
+      vendor: path.resolve(`node_modules/imask/dist/imask.min.js`)
     },
     mode: 'development',
     devtool: isDevelopment ? 'source-map' : 'none',
     output: {
-      filename: '[name].js',
+      filename: (pathData) => {
+        return pathData.chunk.name === 'main' ? '[name].js' : 'vendor.js';
+      },
     },
     target: 'web'
   };

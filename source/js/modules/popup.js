@@ -1,21 +1,22 @@
-import {createFocusArea} from './focus-area.mjs';
-import {scroll} from './scroll-lock.mjs';
-import {isEscEvent} from './utils.mjs';
+import {createFocusArea} from './focus-area.js';
+import {lockScroll, unlockScroll} from './scroll-lock.js';
+import {isEscEvent} from './utils.js';
+
+const POPUP_VISIBLE_CLASS = `popup--visible`;
+const POPUP_INNER_CLASS = `popup__inner`;
+const CLOSE_BUTTON_CLASS = `popup__button`;
 
 const requestButton = document.querySelector(`.header__button`);
 const popup = document.querySelector(`.popup`);
 const popupFocusArea = createFocusArea(popup);
-const popupVisibleClass = `popup--visible`;
-const popupInnerClass = `popup__inner`;
-const closeButtonClass = `popup__button`;
 
 function showPopup() {
   if (popup) {
     const name = popup.querySelector(`input`);
 
-    popup.classList.add(popupVisibleClass);
+    popup.classList.add(POPUP_VISIBLE_CLASS);
     popupFocusArea.lock();
-    scroll.lock();
+    lockScroll();
     name.focus();
 
     popup.addEventListener(`keydown`, hidePopup);
@@ -24,17 +25,17 @@ function showPopup() {
 }
 
 function hidePopup(evt) {
-  const isCloseButton = evt.target.closest(`.${closeButtonClass}`);
-  const isFormWrapper = evt.target.closest(`.${popupInnerClass}`);
+  const isCloseButton = evt.target.closest(`.${CLOSE_BUTTON_CLASS}`);
+  const isFormWrapper = evt.target.closest(`.${POPUP_INNER_CLASS}`);
 
   if (isEscEvent(evt) || evt.type === `click`) {
     if (evt.type === `click` && isFormWrapper && !isCloseButton) {
       return;
     }
 
-    popup.classList.remove(popupVisibleClass);
+    popup.classList.remove(POPUP_VISIBLE_CLASS);
     popupFocusArea.unlock();
-    scroll.unlock();
+    unlockScroll();
 
     requestButton.focus();
     popup.removeEventListener(`keydown`, hidePopup);

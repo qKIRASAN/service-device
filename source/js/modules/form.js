@@ -1,8 +1,9 @@
-import {getAttributeValue, saveAttributeValue} from './utils.mjs';
+import {getAttributeValue, saveAttributeValue} from './utils.js';
+
+const FORM_FIELD_CLASS = `form__field`;
+const CHECKBOX_CLASS = `checkbox`;
 
 const forms = document.querySelectorAll(`.form`);
-const formFieldClass = `form__field`;
-const checkboxClass = `checkbox`;
 
 if (forms) {
   forms.forEach((form) => init(form));
@@ -22,32 +23,32 @@ function init(form) {
 }
 
 function focus(evt) {
-  const fielid = evt.target;
+  const field = evt.target;
 
-  if (fielid.placeholder) {
-    saveAttributeValue(fielid.placeholder);
+  if (field.placeholder) {
+    saveAttributeValue(field.placeholder);
   }
 
-  if (fielid.placeholder.length > 0) {
-    fielid.placeholder = ``;
+  if (field.placeholder.length > 0) {
+    field.placeholder = ``;
   }
 }
 
 function blur(evt) {
-  const fielid = evt.target;
+  const field = evt.target;
 
-  if (fielid.closest(`.${formFieldClass}`)) {
-    fielid.placeholder = getAttributeValue();
+  if (field.closest(`.${FORM_FIELD_CLASS}`)) {
+    field.placeholder = getAttributeValue();
   }
 }
 
 function validate(evt) {
-  const fielid = evt.target;
-  const isInvalid = !fielid.validity.valid;
-  const input = fielid.closest(`.${formFieldClass}`);
-  const checkbox = fielid.closest(`.${checkboxClass}`);
-  const formFieldInvalidClass = `${formFieldClass}--invalid`;
-  const checkboxInvalidClass = `${checkboxClass}--invalid`;
+  const field = evt.target;
+  const isInvalid = !field.validity.valid;
+  const input = field.closest(`.${FORM_FIELD_CLASS}`);
+  const checkbox = field.closest(`.${CHECKBOX_CLASS}`);
+  const formFieldInvalidClass = `${FORM_FIELD_CLASS}--invalid`;
+  const checkboxInvalidClass = `${CHECKBOX_CLASS}--invalid`;
 
   if (input) {
     if (isInvalid) {

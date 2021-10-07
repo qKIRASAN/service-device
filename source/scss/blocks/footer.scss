@@ -59,7 +59,7 @@
 
 .footer__logo {
   margin-bottom: 54px;
-  max-width: 217px;
+  min-width: 217px;
 
   @media (max-width: $large) {
     margin-bottom: auto;
@@ -82,11 +82,10 @@
 
   @media (max-width: $medium) {
     position: relative;
-    flex: 0 1 100%;
-    max-width: 400px;
+    flex: 1 1 100%;
+    min-width: 320px;
     margin-left: auto;
-    padding-top: 19px;
-    padding-bottom: 18px;
+    padding: 19px 15px 18px;
 
     &::after {
       content: "";

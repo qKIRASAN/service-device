@@ -37,16 +37,10 @@
   @media (max-width: $medium) {
     padding: 0 15px;
   }
-}
 
-.page__main {
-  margin-top: -108px;
-
-  @media (max-width: $large) {
-    margin-top: -92px;
-  }
-
-  @media (max-width: $medium) {
-    margin-top: -70px;
+  &--footer {
+    @media (max-width: $medium) {
+      padding: 0;
+    }
   }
 }

@@ -1,0 +1,22 @@
+.header-container {
+  background-image: url("../img/pattern_lg.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/pattern_lg@2x.png");
+  }
+
+  @media (max-width: $large) {
+    background-image: url("../img/pattern_md.png");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/pattern_md@2x.png");
+    }
+  }
+
+  @media (max-width: $medium) {
+    background-image: url("../img/pattern_sm.png");
+  }
+}

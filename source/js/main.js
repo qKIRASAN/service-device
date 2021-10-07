@@ -1,7 +1,7 @@
-import './modules/scroll-smooth.mjs';
-import './modules/local-storage.mjs';
-import './modules/phone-mask.mjs';
-import './modules/trim.mjs';
-import './modules/accordion.mjs';
-import './modules/form.mjs';
-import './modules/popup.mjs';
+import './modules/scroll-smooth.js';
+import './modules/local-storage.js';
+import './modules/phone-mask.js';
+import './modules/trim.js';
+import './modules/accordion.js';
+import './modules/form.js';
+import './modules/popup.js';

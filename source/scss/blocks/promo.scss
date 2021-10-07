@@ -1,57 +1,18 @@
 .promo {
   position: relative;
-  padding-top: 249px;
+  padding-top: 141px;
   padding-bottom: 105px;
   color: $basic-white;
-  background-color: $secondary;
-  background-image:
-    url("../img/pattern_lg.png"),
-    url("../img/pattern2_lg.png"),
-    url("../img/pattern3_lg.png");
-  background-repeat:
-    no-repeat,
-    no-repeat,
-    no-repeat;
-  background-position:
-    0 0,
-    0 0,
-    0 0;
-  background-size:
-    cover,
-    cover,
-    cover;
   overflow: hidden;
 
-  @media (min-resolution: 2dppx) {
-    background-image:
-      url("../img/pattern_lg@2x.png"),
-      url("../img/pattern2_lg@2x.png"),
-      url("../img/pattern3_lg@2x.png");
-  }
-
   @media (max-width: $large) {
-    padding-top: 137px;
+    padding-top: 55px;
     padding-bottom: 69px;
-    background-image:
-      url("../img/pattern_md.png"),
-      url("../img/pattern2_md.png"),
-      url("../img/pattern3_md.png");
-
-    @media (min-resolution: 2dppx) {
-      background-image:
-        url("../img/pattern_md@2x.png"),
-        url("../img/pattern2_md@2x.png"),
-        url("../img/pattern3_md@2x.png");
-    }
   }
 
   @media (max-width: $medium) {
-    padding-top: 70px;
+    padding-top: 0;
     padding-bottom: 70px;
-    background-image:
-      url("../img/pattern_sm.png"),
-      url("../img/pattern2_sm.png"),
-      url("../img/pattern3_sm.png");
   }
 }
 

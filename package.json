@@ -23,6 +23,7 @@
     "gulp-sourcemaps": "2.6.x",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-webp": "^4.0.1",
+    "imask": "^6.2.2",
     "stylelint": "13.13.1",
     "stylelint-config-htmlacademy": "0.1.x",
     "stylelint-scss": "3.21.0",
@@ -31,7 +32,7 @@
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/scss/**/*.scss\" --fix --syntax scss",
-    "test": "npm run editorconfig && npm run stylelint && eslint source/js/main.js source/js/modules/*.mjs",
+    "test": "npm run editorconfig && npm run stylelint && eslint source/js/**/*.js",
     "build": "gulp build",
     "start": "gulp"
   },

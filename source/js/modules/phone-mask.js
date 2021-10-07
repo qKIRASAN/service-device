@@ -1,3 +1,5 @@
+import IMask from 'imask/esm/imask.js';
+
 const inputs = document.querySelectorAll(`input[type=tel]`);
 
 if (inputs) {
@@ -9,6 +11,5 @@ function createMask(input) {
     mask: `{+7}(000)000-00-00`
   };
 
-  // eslint-disable-next-line no-undef
   return new IMask(input, maskPattern);
 }

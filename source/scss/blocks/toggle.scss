@@ -5,6 +5,7 @@
   color: rgba($secondary, 0.5);
   background-color: transparent;
   border: none;
+  outline: none;
   cursor: pointer;
 
   &--button-plus,
@@ -27,12 +28,12 @@
 
 .toggle--button-plus .toggle__icon-plus {
   display: block;
-  margin: auto 3px auto auto;
+  margin: auto 17px auto auto;
 }
 
 .toggle--button-minus .toggle__icon-minus {
   display: block;
-  margin: auto 3px auto auto;
+  margin: auto 17px auto auto;
 }
 
 .toggle:hover,
@@ -41,5 +42,14 @@
 }
 
 .toggle:active {
-  color: lighten($secondary, 10%);
+  color: darken($secondary, 3%);
+}
+
+.toggle:hover + h2,
+.toggle:focus + h2 {
+  color: lighten($secondary, 15%);
+}
+
+.toggle:active + h2 {
+  color: darken($secondary, 3%);
 }

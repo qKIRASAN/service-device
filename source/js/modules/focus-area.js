@@ -1,4 +1,4 @@
-import {isTabEvent} from './utils.mjs';
+import {isTabEvent} from './utils.js';
 
 export function createFocusArea(selector) {
   const elements = selector.querySelectorAll(`
