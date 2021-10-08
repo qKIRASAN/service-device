@@ -1,4 +1,4 @@
-import IMask from 'imask/esm/imask.js';
+import IMask from 'imask';
 
 const inputs = document.querySelectorAll(`input[type=tel]`);
 
