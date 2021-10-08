@@ -1687,36 +1687,75 @@ function objectIncludes(b, a) {
 
 /***/ }),
 
-/***/ "./node_modules/imask/esm/imask.js":
+/***/ "./node_modules/imask/esm/index.js":
 /*!*****************************************!*\
-  !*** ./node_modules/imask/esm/imask.js ***!
+  !*** ./node_modules/imask/esm/index.js ***!
   \*****************************************/
-/*! exports provided: default */
+/*! exports provided: InputMask, default, Masked, MaskedPattern, MaskedEnum, MaskedRange, MaskedNumber, MaskedDate, MaskedRegExp, MaskedFunction, MaskedDynamic, createMask, MaskElement, HTMLMaskElement, HTMLContenteditableMaskElement, PIPE_TYPE, createPipe, pipe */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _controls_input_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./controls/input.js */ "./node_modules/imask/esm/controls/input.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "InputMask", function() { return _controls_input_js__WEBPACK_IMPORTED_MODULE_0__["default"]; });
+
 /* harmony import */ var _core_holder_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./core/holder.js */ "./node_modules/imask/esm/core/holder.js");
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _core_holder_js__WEBPACK_IMPORTED_MODULE_1__["default"]; });
 
-/* harmony import */ var _rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./_rollupPluginBabelHelpers-a0b34764.js */ "./node_modules/imask/esm/_rollupPluginBabelHelpers-a0b34764.js");
-/* harmony import */ var _core_utils_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./core/utils.js */ "./node_modules/imask/esm/core/utils.js");
-/* harmony import */ var _core_action_details_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./core/action-details.js */ "./node_modules/imask/esm/core/action-details.js");
-/* harmony import */ var _masked_date_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./masked/date.js */ "./node_modules/imask/esm/masked/date.js");
-/* harmony import */ var _masked_pattern_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./masked/pattern.js */ "./node_modules/imask/esm/masked/pattern.js");
-/* harmony import */ var _core_change_details_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./core/change-details.js */ "./node_modules/imask/esm/core/change-details.js");
-/* harmony import */ var _masked_base_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./masked/base.js */ "./node_modules/imask/esm/masked/base.js");
-/* harmony import */ var _core_continuous_tail_details_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./core/continuous-tail-details.js */ "./node_modules/imask/esm/core/continuous-tail-details.js");
-/* harmony import */ var _masked_pattern_input_definition_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./masked/pattern/input-definition.js */ "./node_modules/imask/esm/masked/pattern/input-definition.js");
+/* harmony import */ var _masked_base_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./masked/base.js */ "./node_modules/imask/esm/masked/base.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Masked", function() { return _masked_base_js__WEBPACK_IMPORTED_MODULE_2__["default"]; });
+
+/* harmony import */ var _masked_pattern_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./masked/pattern.js */ "./node_modules/imask/esm/masked/pattern.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MaskedPattern", function() { return _masked_pattern_js__WEBPACK_IMPORTED_MODULE_3__["default"]; });
+
+/* harmony import */ var _masked_enum_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./masked/enum.js */ "./node_modules/imask/esm/masked/enum.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MaskedEnum", function() { return _masked_enum_js__WEBPACK_IMPORTED_MODULE_4__["default"]; });
+
+/* harmony import */ var _masked_range_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./masked/range.js */ "./node_modules/imask/esm/masked/range.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MaskedRange", function() { return _masked_range_js__WEBPACK_IMPORTED_MODULE_5__["default"]; });
+
+/* harmony import */ var _masked_number_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./masked/number.js */ "./node_modules/imask/esm/masked/number.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MaskedNumber", function() { return _masked_number_js__WEBPACK_IMPORTED_MODULE_6__["default"]; });
+
+/* harmony import */ var _masked_date_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./masked/date.js */ "./node_modules/imask/esm/masked/date.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MaskedDate", function() { return _masked_date_js__WEBPACK_IMPORTED_MODULE_7__["default"]; });
+
+/* harmony import */ var _masked_regexp_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./masked/regexp.js */ "./node_modules/imask/esm/masked/regexp.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MaskedRegExp", function() { return _masked_regexp_js__WEBPACK_IMPORTED_MODULE_8__["default"]; });
+
+/* harmony import */ var _masked_function_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./masked/function.js */ "./node_modules/imask/esm/masked/function.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MaskedFunction", function() { return _masked_function_js__WEBPACK_IMPORTED_MODULE_9__["default"]; });
+
+/* harmony import */ var _masked_dynamic_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./masked/dynamic.js */ "./node_modules/imask/esm/masked/dynamic.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MaskedDynamic", function() { return _masked_dynamic_js__WEBPACK_IMPORTED_MODULE_10__["default"]; });
+
 /* harmony import */ var _masked_factory_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./masked/factory.js */ "./node_modules/imask/esm/masked/factory.js");
-/* harmony import */ var _masked_pattern_fixed_definition_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./masked/pattern/fixed-definition.js */ "./node_modules/imask/esm/masked/pattern/fixed-definition.js");
-/* harmony import */ var _masked_pattern_chunk_tail_details_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./masked/pattern/chunk-tail-details.js */ "./node_modules/imask/esm/masked/pattern/chunk-tail-details.js");
-/* harmony import */ var _masked_regexp_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./masked/regexp.js */ "./node_modules/imask/esm/masked/regexp.js");
-/* harmony import */ var _masked_range_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./masked/range.js */ "./node_modules/imask/esm/masked/range.js");
-/* harmony import */ var _controls_mask_element_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./controls/mask-element.js */ "./node_modules/imask/esm/controls/mask-element.js");
-/* harmony import */ var _controls_html_mask_element_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./controls/html-mask-element.js */ "./node_modules/imask/esm/controls/html-mask-element.js");
-/* harmony import */ var _controls_html_contenteditable_mask_element_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./controls/html-contenteditable-mask-element.js */ "./node_modules/imask/esm/controls/html-contenteditable-mask-element.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createMask", function() { return _masked_factory_js__WEBPACK_IMPORTED_MODULE_11__["default"]; });
+
+/* harmony import */ var _controls_mask_element_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./controls/mask-element.js */ "./node_modules/imask/esm/controls/mask-element.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MaskElement", function() { return _controls_mask_element_js__WEBPACK_IMPORTED_MODULE_12__["default"]; });
+
+/* harmony import */ var _controls_html_mask_element_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./controls/html-mask-element.js */ "./node_modules/imask/esm/controls/html-mask-element.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "HTMLMaskElement", function() { return _controls_html_mask_element_js__WEBPACK_IMPORTED_MODULE_13__["default"]; });
+
+/* harmony import */ var _controls_html_contenteditable_mask_element_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./controls/html-contenteditable-mask-element.js */ "./node_modules/imask/esm/controls/html-contenteditable-mask-element.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "HTMLContenteditableMaskElement", function() { return _controls_html_contenteditable_mask_element_js__WEBPACK_IMPORTED_MODULE_14__["default"]; });
+
+/* harmony import */ var _masked_pipe_js__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./masked/pipe.js */ "./node_modules/imask/esm/masked/pipe.js");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PIPE_TYPE", function() { return _masked_pipe_js__WEBPACK_IMPORTED_MODULE_15__["PIPE_TYPE"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "createPipe", function() { return _masked_pipe_js__WEBPACK_IMPORTED_MODULE_15__["createPipe"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "pipe", function() { return _masked_pipe_js__WEBPACK_IMPORTED_MODULE_15__["pipe"]; });
+
+/* harmony import */ var _rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./_rollupPluginBabelHelpers-a0b34764.js */ "./node_modules/imask/esm/_rollupPluginBabelHelpers-a0b34764.js");
+/* harmony import */ var _core_utils_js__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./core/utils.js */ "./node_modules/imask/esm/core/utils.js");
+/* harmony import */ var _core_action_details_js__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./core/action-details.js */ "./node_modules/imask/esm/core/action-details.js");
+/* harmony import */ var _core_change_details_js__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./core/change-details.js */ "./node_modules/imask/esm/core/change-details.js");
+/* harmony import */ var _core_continuous_tail_details_js__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./core/continuous-tail-details.js */ "./node_modules/imask/esm/core/continuous-tail-details.js");
+/* harmony import */ var _masked_pattern_input_definition_js__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./masked/pattern/input-definition.js */ "./node_modules/imask/esm/masked/pattern/input-definition.js");
+/* harmony import */ var _masked_pattern_fixed_definition_js__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./masked/pattern/fixed-definition.js */ "./node_modules/imask/esm/masked/pattern/fixed-definition.js");
+/* harmony import */ var _masked_pattern_chunk_tail_details_js__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./masked/pattern/chunk-tail-details.js */ "./node_modules/imask/esm/masked/pattern/chunk-tail-details.js");
 
 
 
@@ -1737,6 +1776,15 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+
+
+
+
+
+try {
+  globalThis.IMask = _core_holder_js__WEBPACK_IMPORTED_MODULE_1__["default"];
+} catch (e) {}
 
 
 /***/ }),
@@ -2332,6 +2380,473 @@ _core_holder_js__WEBPACK_IMPORTED_MODULE_3__["default"].MaskedDate = MaskedDate;
 
 /***/ }),
 
+/***/ "./node_modules/imask/esm/masked/dynamic.js":
+/*!**************************************************!*\
+  !*** ./node_modules/imask/esm/masked/dynamic.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MaskedDynamic; });
+/* harmony import */ var _rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_rollupPluginBabelHelpers-a0b34764.js */ "./node_modules/imask/esm/_rollupPluginBabelHelpers-a0b34764.js");
+/* harmony import */ var _core_change_details_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/change-details.js */ "./node_modules/imask/esm/core/change-details.js");
+/* harmony import */ var _factory_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./factory.js */ "./node_modules/imask/esm/masked/factory.js");
+/* harmony import */ var _base_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.js */ "./node_modules/imask/esm/masked/base.js");
+/* harmony import */ var _core_holder_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../core/holder.js */ "./node_modules/imask/esm/core/holder.js");
+/* harmony import */ var _core_utils_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../core/utils.js */ "./node_modules/imask/esm/core/utils.js");
+/* harmony import */ var _core_continuous_tail_details_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../core/continuous-tail-details.js */ "./node_modules/imask/esm/core/continuous-tail-details.js");
+
+
+
+
+
+
+
+
+var _excluded = ["compiledMasks", "currentMaskRef", "currentMask"];
+
+/** Dynamic mask for choosing apropriate mask in run-time */
+var MaskedDynamic = /*#__PURE__*/function (_Masked) {
+  Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["d"])(MaskedDynamic, _Masked);
+
+  var _super = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["e"])(MaskedDynamic);
+
+  /** Currently chosen mask */
+
+  /** Compliled {@link Masked} options */
+
+  /** Chooses {@link Masked} depending on input value */
+
+  /**
+    @param {Object} opts
+  */
+  function MaskedDynamic(opts) {
+    var _this;
+
+    Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["a"])(this, MaskedDynamic);
+
+    _this = _super.call(this, Object.assign({}, MaskedDynamic.DEFAULTS, opts));
+    _this.currentMask = null;
+    return _this;
+  }
+  /**
+    @override
+  */
+
+
+  Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["_"])(MaskedDynamic, [{
+    key: "_update",
+    value: function _update(opts) {
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedDynamic.prototype), "_update", this).call(this, opts);
+
+      if ('mask' in opts) {
+        // mask could be totally dynamic with only `dispatch` option
+        this.compiledMasks = Array.isArray(opts.mask) ? opts.mask.map(function (m) {
+          return Object(_factory_js__WEBPACK_IMPORTED_MODULE_2__["default"])(m);
+        }) : [];
+      }
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "_appendCharRaw",
+    value: function _appendCharRaw(ch) {
+      var flags = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+      var details = this._applyDispatch(ch, flags);
+
+      if (this.currentMask) {
+        details.aggregate(this.currentMask._appendChar(ch, flags));
+      }
+
+      return details;
+    }
+  }, {
+    key: "_applyDispatch",
+    value: function _applyDispatch() {
+      var appended = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+      var flags = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var prevValueBeforeTail = flags.tail && flags._beforeTailState != null ? flags._beforeTailState._value : this.value;
+      var inputValue = this.rawInputValue;
+      var insertValue = flags.tail && flags._beforeTailState != null ? // $FlowFixMe - tired to fight with type system
+      flags._beforeTailState._rawInputValue : inputValue;
+      var tailValue = inputValue.slice(insertValue.length);
+      var prevMask = this.currentMask;
+      var details = new _core_change_details_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+      var prevMaskState = prevMask && prevMask.state; // clone flags to prevent overwriting `_beforeTailState`
+
+      this.currentMask = this.doDispatch(appended, Object.assign({}, flags)); // restore state after dispatch
+
+      if (this.currentMask) {
+        if (this.currentMask !== prevMask) {
+          // if mask changed reapply input
+          this.currentMask.reset();
+
+          if (insertValue) {
+            // $FlowFixMe - it's ok, we don't change current mask above
+            var d = this.currentMask.append(insertValue, {
+              raw: true
+            });
+            details.tailShift = d.inserted.length - prevValueBeforeTail.length;
+          }
+
+          if (tailValue) {
+            // $FlowFixMe - it's ok, we don't change current mask above
+            details.tailShift += this.currentMask.append(tailValue, {
+              raw: true,
+              tail: true
+            }).tailShift;
+          }
+        } else {
+          // Dispatch can do something bad with state, so
+          // restore prev mask state
+          this.currentMask.state = prevMaskState;
+        }
+      }
+
+      return details;
+    }
+  }, {
+    key: "_appendPlaceholder",
+    value: function _appendPlaceholder() {
+      var details = this._applyDispatch.apply(this, arguments);
+
+      if (this.currentMask) {
+        details.aggregate(this.currentMask._appendPlaceholder());
+      }
+
+      return details;
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "doDispatch",
+    value: function doDispatch(appended) {
+      var flags = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      return this.dispatch(appended, this, flags);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "doValidate",
+    value: function doValidate() {
+      var _get2, _this$currentMask;
+
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return (_get2 = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedDynamic.prototype), "doValidate", this)).call.apply(_get2, [this].concat(args)) && (!this.currentMask || (_this$currentMask = this.currentMask).doValidate.apply(_this$currentMask, args));
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "reset",
+    value: function reset() {
+      if (this.currentMask) this.currentMask.reset();
+      this.compiledMasks.forEach(function (m) {
+        return m.reset();
+      });
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "value",
+    get: function get() {
+      return this.currentMask ? this.currentMask.value : '';
+    },
+    set: function set(value) {
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["i"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedDynamic.prototype), "value", value, this, true);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "unmaskedValue",
+    get: function get() {
+      return this.currentMask ? this.currentMask.unmaskedValue : '';
+    },
+    set: function set(unmaskedValue) {
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["i"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedDynamic.prototype), "unmaskedValue", unmaskedValue, this, true);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "typedValue",
+    get: function get() {
+      return this.currentMask ? this.currentMask.typedValue : '';
+    } // probably typedValue should not be used with dynamic
+    ,
+    set: function set(value) {
+      var unmaskedValue = String(value); // double check it
+
+      if (this.currentMask) {
+        this.currentMask.typedValue = value;
+        unmaskedValue = this.currentMask.unmaskedValue;
+      }
+
+      this.unmaskedValue = unmaskedValue;
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "isComplete",
+    get: function get() {
+      return !!this.currentMask && this.currentMask.isComplete;
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "remove",
+    value: function remove() {
+      var details = new _core_change_details_js__WEBPACK_IMPORTED_MODULE_1__["default"]();
+
+      if (this.currentMask) {
+        var _this$currentMask2;
+
+        details.aggregate((_this$currentMask2 = this.currentMask).remove.apply(_this$currentMask2, arguments)) // update with dispatch
+        .aggregate(this._applyDispatch());
+      }
+
+      return details;
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "state",
+    get: function get() {
+      return Object.assign({}, Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedDynamic.prototype), "state", this), {
+        _rawInputValue: this.rawInputValue,
+        compiledMasks: this.compiledMasks.map(function (m) {
+          return m.state;
+        }),
+        currentMaskRef: this.currentMask,
+        currentMask: this.currentMask && this.currentMask.state
+      });
+    },
+    set: function set(state) {
+      var compiledMasks = state.compiledMasks,
+          currentMaskRef = state.currentMaskRef,
+          currentMask = state.currentMask,
+          maskedState = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["b"])(state, _excluded);
+
+      this.compiledMasks.forEach(function (m, mi) {
+        return m.state = compiledMasks[mi];
+      });
+
+      if (currentMaskRef != null) {
+        this.currentMask = currentMaskRef;
+        this.currentMask.state = currentMask;
+      }
+
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["i"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedDynamic.prototype), "state", maskedState, this, true);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "extractInput",
+    value: function extractInput() {
+      var _this$currentMask3;
+
+      return this.currentMask ? (_this$currentMask3 = this.currentMask).extractInput.apply(_this$currentMask3, arguments) : '';
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "extractTail",
+    value: function extractTail() {
+      var _this$currentMask4, _get3;
+
+      for (var _len2 = arguments.length, args = new Array(_len2), _key2 = 0; _key2 < _len2; _key2++) {
+        args[_key2] = arguments[_key2];
+      }
+
+      return this.currentMask ? (_this$currentMask4 = this.currentMask).extractTail.apply(_this$currentMask4, args) : (_get3 = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedDynamic.prototype), "extractTail", this)).call.apply(_get3, [this].concat(args));
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "doCommit",
+    value: function doCommit() {
+      if (this.currentMask) this.currentMask.doCommit();
+
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedDynamic.prototype), "doCommit", this).call(this);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "nearestInputPos",
+    value: function nearestInputPos() {
+      var _this$currentMask5, _get4;
+
+      for (var _len3 = arguments.length, args = new Array(_len3), _key3 = 0; _key3 < _len3; _key3++) {
+        args[_key3] = arguments[_key3];
+      }
+
+      return this.currentMask ? (_this$currentMask5 = this.currentMask).nearestInputPos.apply(_this$currentMask5, args) : (_get4 = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedDynamic.prototype), "nearestInputPos", this)).call.apply(_get4, [this].concat(args));
+    }
+  }, {
+    key: "overwrite",
+    get: function get() {
+      return this.currentMask ? this.currentMask.overwrite : Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedDynamic.prototype), "overwrite", this);
+    },
+    set: function set(overwrite) {
+      console.warn('"overwrite" option is not available in dynamic mask, use this option in siblings');
+    }
+  }]);
+
+  return MaskedDynamic;
+}(_base_js__WEBPACK_IMPORTED_MODULE_3__["default"]);
+MaskedDynamic.DEFAULTS = {
+  dispatch: function dispatch(appended, masked, flags) {
+    if (!masked.compiledMasks.length) return;
+    var inputValue = masked.rawInputValue; // simulate input
+
+    var inputs = masked.compiledMasks.map(function (m, index) {
+      m.reset();
+      m.append(inputValue, {
+        raw: true
+      });
+      m.append(appended, flags);
+      var weight = m.rawInputValue.length;
+      return {
+        weight: weight,
+        index: index
+      };
+    }); // pop masks with longer values first
+
+    inputs.sort(function (i1, i2) {
+      return i2.weight - i1.weight;
+    });
+    return masked.compiledMasks[inputs[0].index];
+  }
+};
+_core_holder_js__WEBPACK_IMPORTED_MODULE_4__["default"].MaskedDynamic = MaskedDynamic;
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/imask/esm/masked/enum.js":
+/*!***********************************************!*\
+  !*** ./node_modules/imask/esm/masked/enum.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MaskedEnum; });
+/* harmony import */ var _rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_rollupPluginBabelHelpers-a0b34764.js */ "./node_modules/imask/esm/_rollupPluginBabelHelpers-a0b34764.js");
+/* harmony import */ var _pattern_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pattern.js */ "./node_modules/imask/esm/masked/pattern.js");
+/* harmony import */ var _core_holder_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/holder.js */ "./node_modules/imask/esm/core/holder.js");
+/* harmony import */ var _core_utils_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../core/utils.js */ "./node_modules/imask/esm/core/utils.js");
+/* harmony import */ var _core_change_details_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../core/change-details.js */ "./node_modules/imask/esm/core/change-details.js");
+/* harmony import */ var _base_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./base.js */ "./node_modules/imask/esm/masked/base.js");
+/* harmony import */ var _core_continuous_tail_details_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../core/continuous-tail-details.js */ "./node_modules/imask/esm/core/continuous-tail-details.js");
+/* harmony import */ var _pattern_input_definition_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pattern/input-definition.js */ "./node_modules/imask/esm/masked/pattern/input-definition.js");
+/* harmony import */ var _factory_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./factory.js */ "./node_modules/imask/esm/masked/factory.js");
+/* harmony import */ var _pattern_fixed_definition_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pattern/fixed-definition.js */ "./node_modules/imask/esm/masked/pattern/fixed-definition.js");
+/* harmony import */ var _pattern_chunk_tail_details_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pattern/chunk-tail-details.js */ "./node_modules/imask/esm/masked/pattern/chunk-tail-details.js");
+/* harmony import */ var _regexp_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./regexp.js */ "./node_modules/imask/esm/masked/regexp.js");
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Pattern which validates enum values */
+
+var MaskedEnum = /*#__PURE__*/function (_MaskedPattern) {
+  Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["d"])(MaskedEnum, _MaskedPattern);
+
+  var _super = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["e"])(MaskedEnum);
+
+  function MaskedEnum() {
+    Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["a"])(this, MaskedEnum);
+
+    return _super.apply(this, arguments);
+  }
+
+  Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["_"])(MaskedEnum, [{
+    key: "_update",
+    value:
+    /**
+      @override
+      @param {Object} opts
+    */
+    function _update(opts) {
+      // TODO type
+      if (opts.enum) opts.mask = '*'.repeat(opts.enum[0].length);
+
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedEnum.prototype), "_update", this).call(this, opts);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "doValidate",
+    value: function doValidate() {
+      var _this = this,
+          _get2;
+
+      for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+
+      return this.enum.some(function (e) {
+        return e.indexOf(_this.unmaskedValue) >= 0;
+      }) && (_get2 = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedEnum.prototype), "doValidate", this)).call.apply(_get2, [this].concat(args));
+    }
+  }]);
+
+  return MaskedEnum;
+}(_pattern_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+_core_holder_js__WEBPACK_IMPORTED_MODULE_2__["default"].MaskedEnum = MaskedEnum;
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/imask/esm/masked/factory.js":
 /*!**************************************************!*\
   !*** ./node_modules/imask/esm/masked/factory.js ***!
@@ -2392,6 +2907,489 @@ function createMask(opts) {
   return new MaskedClass(opts);
 }
 _core_holder_js__WEBPACK_IMPORTED_MODULE_1__["default"].createMask = createMask;
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/imask/esm/masked/function.js":
+/*!***************************************************!*\
+  !*** ./node_modules/imask/esm/masked/function.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MaskedFunction; });
+/* harmony import */ var _rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_rollupPluginBabelHelpers-a0b34764.js */ "./node_modules/imask/esm/_rollupPluginBabelHelpers-a0b34764.js");
+/* harmony import */ var _base_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./base.js */ "./node_modules/imask/esm/masked/base.js");
+/* harmony import */ var _core_holder_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/holder.js */ "./node_modules/imask/esm/core/holder.js");
+/* harmony import */ var _core_change_details_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../core/change-details.js */ "./node_modules/imask/esm/core/change-details.js");
+/* harmony import */ var _core_continuous_tail_details_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../core/continuous-tail-details.js */ "./node_modules/imask/esm/core/continuous-tail-details.js");
+/* harmony import */ var _core_utils_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../core/utils.js */ "./node_modules/imask/esm/core/utils.js");
+
+
+
+
+
+
+
+/** Masking by custom Function */
+
+var MaskedFunction = /*#__PURE__*/function (_Masked) {
+  Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["d"])(MaskedFunction, _Masked);
+
+  var _super = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["e"])(MaskedFunction);
+
+  function MaskedFunction() {
+    Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["a"])(this, MaskedFunction);
+
+    return _super.apply(this, arguments);
+  }
+
+  Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["_"])(MaskedFunction, [{
+    key: "_update",
+    value:
+    /**
+      @override
+      @param {Object} opts
+    */
+    function _update(opts) {
+      if (opts.mask) opts.validate = opts.mask;
+
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedFunction.prototype), "_update", this).call(this, opts);
+    }
+  }]);
+
+  return MaskedFunction;
+}(_base_js__WEBPACK_IMPORTED_MODULE_1__["default"]);
+_core_holder_js__WEBPACK_IMPORTED_MODULE_2__["default"].MaskedFunction = MaskedFunction;
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/imask/esm/masked/number.js":
+/*!*************************************************!*\
+  !*** ./node_modules/imask/esm/masked/number.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return MaskedNumber; });
+/* harmony import */ var _rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../_rollupPluginBabelHelpers-a0b34764.js */ "./node_modules/imask/esm/_rollupPluginBabelHelpers-a0b34764.js");
+/* harmony import */ var _core_utils_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/utils.js */ "./node_modules/imask/esm/core/utils.js");
+/* harmony import */ var _core_change_details_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/change-details.js */ "./node_modules/imask/esm/core/change-details.js");
+/* harmony import */ var _base_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./base.js */ "./node_modules/imask/esm/masked/base.js");
+/* harmony import */ var _core_holder_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../core/holder.js */ "./node_modules/imask/esm/core/holder.js");
+/* harmony import */ var _core_continuous_tail_details_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../core/continuous-tail-details.js */ "./node_modules/imask/esm/core/continuous-tail-details.js");
+
+
+
+
+
+
+
+/**
+  Number mask
+  @param {Object} opts
+  @param {string} opts.radix - Single char
+  @param {string} opts.thousandsSeparator - Single char
+  @param {Array<string>} opts.mapToRadix - Array of single chars
+  @param {number} opts.min
+  @param {number} opts.max
+  @param {number} opts.scale - Digits after point
+  @param {boolean} opts.signed - Allow negative
+  @param {boolean} opts.normalizeZeros - Flag to remove leading and trailing zeros in the end of editing
+  @param {boolean} opts.padFractionalZeros - Flag to pad trailing zeros after point in the end of editing
+*/
+var MaskedNumber = /*#__PURE__*/function (_Masked) {
+  Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["d"])(MaskedNumber, _Masked);
+
+  var _super = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["e"])(MaskedNumber);
+
+  /** Single char */
+
+  /** Single char */
+
+  /** Array of single chars */
+
+  /** */
+
+  /** */
+
+  /** Digits after point */
+
+  /** */
+
+  /** Flag to remove leading and trailing zeros in the end of editing */
+
+  /** Flag to pad trailing zeros after point in the end of editing */
+  function MaskedNumber(opts) {
+    Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["a"])(this, MaskedNumber);
+
+    return _super.call(this, Object.assign({}, MaskedNumber.DEFAULTS, opts));
+  }
+  /**
+    @override
+  */
+
+
+  Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["_"])(MaskedNumber, [{
+    key: "_update",
+    value: function _update(opts) {
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedNumber.prototype), "_update", this).call(this, opts);
+
+      this._updateRegExps();
+    }
+    /** */
+
+  }, {
+    key: "_updateRegExps",
+    value: function _updateRegExps() {
+      // use different regexp to process user input (more strict, input suffix) and tail shifting
+      var start = '^' + (this.allowNegative ? '[+|\\-]?' : '');
+      var midInput = '(0|([1-9]+\\d*))?';
+      var mid = '\\d*';
+      var end = (this.scale ? '(' + Object(_core_utils_js__WEBPACK_IMPORTED_MODULE_1__["escapeRegExp"])(this.radix) + '\\d{0,' + this.scale + '})?' : '') + '$';
+      this._numberRegExpInput = new RegExp(start + midInput + end);
+      this._numberRegExp = new RegExp(start + mid + end);
+      this._mapToRadixRegExp = new RegExp('[' + this.mapToRadix.map(_core_utils_js__WEBPACK_IMPORTED_MODULE_1__["escapeRegExp"]).join('') + ']', 'g');
+      this._thousandsSeparatorRegExp = new RegExp(Object(_core_utils_js__WEBPACK_IMPORTED_MODULE_1__["escapeRegExp"])(this.thousandsSeparator), 'g');
+    }
+    /** */
+
+  }, {
+    key: "_removeThousandsSeparators",
+    value: function _removeThousandsSeparators(value) {
+      return value.replace(this._thousandsSeparatorRegExp, '');
+    }
+    /** */
+
+  }, {
+    key: "_insertThousandsSeparators",
+    value: function _insertThousandsSeparators(value) {
+      // https://stackoverflow.com/questions/2901102/how-to-print-a-number-with-commas-as-thousands-separators-in-javascript
+      var parts = value.split(this.radix);
+      parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, this.thousandsSeparator);
+      return parts.join(this.radix);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "doPrepare",
+    value: function doPrepare(str) {
+      var _get2;
+
+      for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+        args[_key - 1] = arguments[_key];
+      }
+
+      return (_get2 = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedNumber.prototype), "doPrepare", this)).call.apply(_get2, [this, this._removeThousandsSeparators(str.replace(this._mapToRadixRegExp, this.radix))].concat(args));
+    }
+    /** */
+
+  }, {
+    key: "_separatorsCount",
+    value: function _separatorsCount(to) {
+      var extendOnSeparators = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+      var count = 0;
+
+      for (var pos = 0; pos < to; ++pos) {
+        if (this._value.indexOf(this.thousandsSeparator, pos) === pos) {
+          ++count;
+          if (extendOnSeparators) to += this.thousandsSeparator.length;
+        }
+      }
+
+      return count;
+    }
+    /** */
+
+  }, {
+    key: "_separatorsCountFromSlice",
+    value: function _separatorsCountFromSlice() {
+      var slice = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this._value;
+      return this._separatorsCount(this._removeThousandsSeparators(slice).length, true);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "extractInput",
+    value: function extractInput() {
+      var fromPos = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+      var toPos = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.value.length;
+      var flags = arguments.length > 2 ? arguments[2] : undefined;
+
+      var _this$_adjustRangeWit = this._adjustRangeWithSeparators(fromPos, toPos);
+
+      var _this$_adjustRangeWit2 = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["f"])(_this$_adjustRangeWit, 2);
+
+      fromPos = _this$_adjustRangeWit2[0];
+      toPos = _this$_adjustRangeWit2[1];
+      return this._removeThousandsSeparators(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedNumber.prototype), "extractInput", this).call(this, fromPos, toPos, flags));
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "_appendCharRaw",
+    value: function _appendCharRaw(ch) {
+      var flags = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      if (!this.thousandsSeparator) return Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedNumber.prototype), "_appendCharRaw", this).call(this, ch, flags);
+      var prevBeforeTailValue = flags.tail && flags._beforeTailState ? flags._beforeTailState._value : this._value;
+
+      var prevBeforeTailSeparatorsCount = this._separatorsCountFromSlice(prevBeforeTailValue);
+
+      this._value = this._removeThousandsSeparators(this.value);
+
+      var appendDetails = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedNumber.prototype), "_appendCharRaw", this).call(this, ch, flags);
+
+      this._value = this._insertThousandsSeparators(this._value);
+      var beforeTailValue = flags.tail && flags._beforeTailState ? flags._beforeTailState._value : this._value;
+
+      var beforeTailSeparatorsCount = this._separatorsCountFromSlice(beforeTailValue);
+
+      appendDetails.tailShift += (beforeTailSeparatorsCount - prevBeforeTailSeparatorsCount) * this.thousandsSeparator.length;
+      appendDetails.skip = !appendDetails.rawInserted && ch === this.thousandsSeparator;
+      return appendDetails;
+    }
+    /** */
+
+  }, {
+    key: "_findSeparatorAround",
+    value: function _findSeparatorAround(pos) {
+      if (this.thousandsSeparator) {
+        var searchFrom = pos - this.thousandsSeparator.length + 1;
+        var separatorPos = this.value.indexOf(this.thousandsSeparator, searchFrom);
+        if (separatorPos <= pos) return separatorPos;
+      }
+
+      return -1;
+    }
+  }, {
+    key: "_adjustRangeWithSeparators",
+    value: function _adjustRangeWithSeparators(from, to) {
+      var separatorAroundFromPos = this._findSeparatorAround(from);
+
+      if (separatorAroundFromPos >= 0) from = separatorAroundFromPos;
+
+      var separatorAroundToPos = this._findSeparatorAround(to);
+
+      if (separatorAroundToPos >= 0) to = separatorAroundToPos + this.thousandsSeparator.length;
+      return [from, to];
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "remove",
+    value: function remove() {
+      var fromPos = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+      var toPos = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : this.value.length;
+
+      var _this$_adjustRangeWit3 = this._adjustRangeWithSeparators(fromPos, toPos);
+
+      var _this$_adjustRangeWit4 = Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["f"])(_this$_adjustRangeWit3, 2);
+
+      fromPos = _this$_adjustRangeWit4[0];
+      toPos = _this$_adjustRangeWit4[1];
+      var valueBeforePos = this.value.slice(0, fromPos);
+      var valueAfterPos = this.value.slice(toPos);
+
+      var prevBeforeTailSeparatorsCount = this._separatorsCount(valueBeforePos.length);
+
+      this._value = this._insertThousandsSeparators(this._removeThousandsSeparators(valueBeforePos + valueAfterPos));
+
+      var beforeTailSeparatorsCount = this._separatorsCountFromSlice(valueBeforePos);
+
+      return new _core_change_details_js__WEBPACK_IMPORTED_MODULE_2__["default"]({
+        tailShift: (beforeTailSeparatorsCount - prevBeforeTailSeparatorsCount) * this.thousandsSeparator.length
+      });
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "nearestInputPos",
+    value: function nearestInputPos(cursorPos, direction) {
+      if (!this.thousandsSeparator) return cursorPos;
+
+      switch (direction) {
+        case _core_utils_js__WEBPACK_IMPORTED_MODULE_1__["DIRECTION"].NONE:
+        case _core_utils_js__WEBPACK_IMPORTED_MODULE_1__["DIRECTION"].LEFT:
+        case _core_utils_js__WEBPACK_IMPORTED_MODULE_1__["DIRECTION"].FORCE_LEFT:
+          {
+            var separatorAtLeftPos = this._findSeparatorAround(cursorPos - 1);
+
+            if (separatorAtLeftPos >= 0) {
+              var separatorAtLeftEndPos = separatorAtLeftPos + this.thousandsSeparator.length;
+
+              if (cursorPos < separatorAtLeftEndPos || this.value.length <= separatorAtLeftEndPos || direction === _core_utils_js__WEBPACK_IMPORTED_MODULE_1__["DIRECTION"].FORCE_LEFT) {
+                return separatorAtLeftPos;
+              }
+            }
+
+            break;
+          }
+
+        case _core_utils_js__WEBPACK_IMPORTED_MODULE_1__["DIRECTION"].RIGHT:
+        case _core_utils_js__WEBPACK_IMPORTED_MODULE_1__["DIRECTION"].FORCE_RIGHT:
+          {
+            var separatorAtRightPos = this._findSeparatorAround(cursorPos);
+
+            if (separatorAtRightPos >= 0) {
+              return separatorAtRightPos + this.thousandsSeparator.length;
+            }
+          }
+      }
+
+      return cursorPos;
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "doValidate",
+    value: function doValidate(flags) {
+      var regexp = flags.input ? this._numberRegExpInput : this._numberRegExp; // validate as string
+
+      var valid = regexp.test(this._removeThousandsSeparators(this.value));
+
+      if (valid) {
+        // validate as number
+        var number = this.number;
+        valid = valid && !isNaN(number) && (this.min == null || this.min >= 0 || this.min <= this.number) && (this.max == null || this.max <= 0 || this.number <= this.max);
+      }
+
+      return valid && Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedNumber.prototype), "doValidate", this).call(this, flags);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "doCommit",
+    value: function doCommit() {
+      if (this.value) {
+        var number = this.number;
+        var validnum = number; // check bounds
+
+        if (this.min != null) validnum = Math.max(validnum, this.min);
+        if (this.max != null) validnum = Math.min(validnum, this.max);
+        if (validnum !== number) this.unmaskedValue = String(validnum);
+        var formatted = this.value;
+        if (this.normalizeZeros) formatted = this._normalizeZeros(formatted);
+        if (this.padFractionalZeros) formatted = this._padFractionalZeros(formatted);
+        this._value = formatted;
+      }
+
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["g"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedNumber.prototype), "doCommit", this).call(this);
+    }
+    /** */
+
+  }, {
+    key: "_normalizeZeros",
+    value: function _normalizeZeros(value) {
+      var parts = this._removeThousandsSeparators(value).split(this.radix); // remove leading zeros
+
+
+      parts[0] = parts[0].replace(/^(\D*)(0*)(\d*)/, function (match, sign, zeros, num) {
+        return sign + num;
+      }); // add leading zero
+
+      if (value.length && !/\d$/.test(parts[0])) parts[0] = parts[0] + '0';
+
+      if (parts.length > 1) {
+        parts[1] = parts[1].replace(/0*$/, ''); // remove trailing zeros
+
+        if (!parts[1].length) parts.length = 1; // remove fractional
+      }
+
+      return this._insertThousandsSeparators(parts.join(this.radix));
+    }
+    /** */
+
+  }, {
+    key: "_padFractionalZeros",
+    value: function _padFractionalZeros(value) {
+      if (!value) return value;
+      var parts = value.split(this.radix);
+      if (parts.length < 2) parts.push('');
+      parts[1] = parts[1].padEnd(this.scale, '0');
+      return parts.join(this.radix);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "unmaskedValue",
+    get: function get() {
+      return this._removeThousandsSeparators(this._normalizeZeros(this.value)).replace(this.radix, '.');
+    },
+    set: function set(unmaskedValue) {
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["i"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedNumber.prototype), "unmaskedValue", unmaskedValue.replace('.', this.radix), this, true);
+    }
+    /**
+      @override
+    */
+
+  }, {
+    key: "typedValue",
+    get: function get() {
+      return Number(this.unmaskedValue);
+    },
+    set: function set(n) {
+      Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["i"])(Object(_rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_0__["h"])(MaskedNumber.prototype), "unmaskedValue", String(n), this, true);
+    }
+    /** Parsed Number */
+
+  }, {
+    key: "number",
+    get: function get() {
+      return this.typedValue;
+    },
+    set: function set(number) {
+      this.typedValue = number;
+    }
+    /**
+      Is negative allowed
+      @readonly
+    */
+
+  }, {
+    key: "allowNegative",
+    get: function get() {
+      return this.signed || this.min != null && this.min < 0 || this.max != null && this.max < 0;
+    }
+  }]);
+
+  return MaskedNumber;
+}(_base_js__WEBPACK_IMPORTED_MODULE_3__["default"]);
+MaskedNumber.DEFAULTS = {
+  radix: ',',
+  thousandsSeparator: '',
+  mapToRadix: ['.'],
+  scale: 2,
+  signed: false,
+  normalizeZeros: true,
+  padFractionalZeros: false
+};
+_core_holder_js__WEBPACK_IMPORTED_MODULE_4__["default"].MaskedNumber = MaskedNumber;
 
 
 
@@ -3685,6 +4683,65 @@ var PatternInputDefinition = /*#__PURE__*/function () {
 
 /***/ }),
 
+/***/ "./node_modules/imask/esm/masked/pipe.js":
+/*!***********************************************!*\
+  !*** ./node_modules/imask/esm/masked/pipe.js ***!
+  \***********************************************/
+/*! exports provided: PIPE_TYPE, createPipe, pipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PIPE_TYPE", function() { return PIPE_TYPE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "createPipe", function() { return createPipe; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pipe", function() { return pipe; });
+/* harmony import */ var _factory_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./factory.js */ "./node_modules/imask/esm/masked/factory.js");
+/* harmony import */ var _core_holder_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../core/holder.js */ "./node_modules/imask/esm/core/holder.js");
+/* harmony import */ var _core_utils_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../core/utils.js */ "./node_modules/imask/esm/core/utils.js");
+/* harmony import */ var _rollupPluginBabelHelpers_a0b34764_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../_rollupPluginBabelHelpers-a0b34764.js */ "./node_modules/imask/esm/_rollupPluginBabelHelpers-a0b34764.js");
+
+
+
+
+
+/** Mask pipe source and destination types */
+
+var PIPE_TYPE = {
+  MASKED: 'value',
+  UNMASKED: 'unmaskedValue',
+  TYPED: 'typedValue'
+};
+/** Creates new pipe function depending on mask type, source and destination options */
+
+function createPipe(mask) {
+  var from = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : PIPE_TYPE.MASKED;
+  var to = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : PIPE_TYPE.MASKED;
+  var masked = Object(_factory_js__WEBPACK_IMPORTED_MODULE_0__["default"])(mask);
+  return function (value) {
+    return masked.runIsolated(function (m) {
+      m[from] = value;
+      return m[to];
+    });
+  };
+}
+/** Pipes value through mask depending on mask type, source and destination options */
+
+function pipe(value) {
+  for (var _len = arguments.length, pipeArgs = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    pipeArgs[_key - 1] = arguments[_key];
+  }
+
+  return createPipe.apply(void 0, pipeArgs)(value);
+}
+_core_holder_js__WEBPACK_IMPORTED_MODULE_1__["default"].PIPE_TYPE = PIPE_TYPE;
+_core_holder_js__WEBPACK_IMPORTED_MODULE_1__["default"].createPipe = createPipe;
+_core_holder_js__WEBPACK_IMPORTED_MODULE_1__["default"].pipe = pipe;
+
+
+
+
+/***/ }),
+
 /***/ "./node_modules/imask/esm/masked/range.js":
 /*!************************************************!*\
   !*** ./node_modules/imask/esm/masked/range.js ***!
@@ -4255,7 +5312,7 @@ function saveData(evt) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var imask_esm_imask_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! imask/esm/imask.js */ "./node_modules/imask/esm/imask.js");
+/* harmony import */ var imask__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! imask */ "./node_modules/imask/esm/index.js");
 
 
 const inputs = document.querySelectorAll(`input[type=tel]`);
@@ -4269,7 +5326,7 @@ function createMask(input) {
     mask: `{+7}(000)000-00-00`
   };
 
-  return new imask_esm_imask_js__WEBPACK_IMPORTED_MODULE_0__["default"](input, maskPattern);
+  return new imask__WEBPACK_IMPORTED_MODULE_0__["default"](input, maskPattern);
 }
 
 
