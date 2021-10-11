@@ -52,8 +52,9 @@
   }
 
   @media (max-width: $medium) {
-    flex-direction: column;
     margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 

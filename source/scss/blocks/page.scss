@@ -41,6 +41,7 @@
   &--footer {
     @media (max-width: $medium) {
       padding: 0;
+      max-width: 575px;
     }
   }
 }

@@ -40,7 +40,9 @@
 
   @media (max-width: $medium) {
     flex: 0 1 100%;
-    margin: 16px auto 33px auto;
+    margin: 16px auto 19px;
+    padding: 0 9px;
+    min-width: 253px;
   }
 }
 
@@ -63,7 +65,7 @@
 
   @media (max-width: $medium) {
     flex: 0 1 auto;
-    margin: 0 auto auto;
+    margin: 14px auto auto;
     max-width: unset;
   }
 }
